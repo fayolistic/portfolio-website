@@ -1,0 +1,292 @@
+body{
+    margin: 0em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    word-wrap: break-word;
+    text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+a:active{
+    text-decoration: none;
+    color: #000;
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+#not-justified{
+    text-align: left;
+}
+.blue{
+    background-color: rgb(129, 192, 254);
+}
+.pink{
+    background-color: rgb(255, 190, 231);
+}
+li{
+    list-style: none;
+}
+ul{
+    margin:0em;
+    padding: 0em;
+}
+h1{
+    font-size: 7em;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+div li{
+    font-size: 1.5em;
+}
+hr{
+    background-color: rgb(129, 192, 254);
+    border-color: rgb(129, 192, 254);
+}
+
+
+nav{
+background-image: linear-gradient(rgb(255, 190, 231),rgb(129, 192, 254));
+height: 5em;
+width: 100%;
+margin: 0em 0em;
+position: fixed;
+}
+
+nav li{
+    margin: 0em;
+    float: left;
+    list-style: none;
+    width:16.6%;
+    padding-top: 2em;
+    text-align: center;
+    font-weight: px;
+
+}
+nav li:hover{
+    font-size: larger;
+    color: white;
+    padding-top:1.5em;
+}
+div{
+    padding: 1em 4em 3em 4em;
+ }
+/* about me */
+
+.about-me{
+    padding-top: 6em;
+}
+
+ div div{
+    padding: 0px;
+    padding-top: 1em;
+} 
+
+
+.about-me-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    font-size: 1.3em;
+    column-gap: 2em;
+    align-items: center;
+}
+.about-me-content img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30em;
+
+}
+
+
+li li{
+    font-size: 1.2em;
+}
+
+ div li{
+    padding-top: 1em;
+   }
+
+.courses-iam-on{
+    padding-right: 0em;
+    background-color:  rgb(243, 242, 246);
+   }
+
+/* work-experience */
+#title{
+    font-size: 1.5em;
+}
+
+#subname{
+    font-size: 1em;
+    padding-top: 0.3em;
+    color: rgb(58, 54, 54);  
+}
+#sub-subname{
+    font-size: 1em;
+    padding-top: 0.3em;
+    color: rgb(58, 54, 54);  
+}
+#sub-sub-subname{
+    font-size: 0.6em;
+}
+
+.work-experience-content{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2em;
+    align-items: center ;
+    row-gap: 1em;
+}
+.work-experience-content p{
+    margin: 0em;
+    padding: 0em;
+}
+
+.work-experience-content img{
+    height: 80%;
+    width: auto;
+}
+
+/* Skills */
+.skills button{
+    border: 0px;
+    border-radius: 1.6em;
+    font-size: 1em;
+    padding: 1em;
+    margin: 2em 3em 1em 3em;
+    width: 15em;
+}
+.blue:hover{
+    background-color: rgb(255, 190, 231);
+}
+.pink:hover{
+    background-color:  rgb(129, 192, 254);;
+}
+
+/* projects */
+.project-contents iframe{
+    margin-top: 3em;
+    height:30em;
+    width: 70em;
+}
+
+
+
+/* bacause some nav bar elements ar two worded and padding becomes weird below this */
+@media screen and (max-width: 910px) {
+        nav li{
+            margin: 0em;
+            float: left;
+            list-style: none;
+            width:16.6%;
+            padding-top: 2em;
+            text-align: center;
+            /* the only change is font size */
+            font-size: 0.90em;  
+        
+        }
+        nav{
+            width: 100%;
+        }
+    
+      
+        h1{
+            font-size: 5em;
+            margin-top: 0.2em;
+            margin-bottom: 0.2em;
+        }
+        div li{
+            font-size: 1.5em;
+        }
+    }
+      img{
+        height: 100%;
+        width: 100%;
+        align-self: center;
+        padding-top: 1em;
+
+    }
+    
+
+
+  /* for phone screens */
+@media screen and (max-width: 635px) {
+    body{
+        width:100%;
+        overflow-x: hidden;
+    }
+    nav{
+        height:21em;
+        position: relative;
+    }
+    nav ul{
+        padding-left: 4em;
+    }
+    nav li {
+      float: none;
+      display: block;
+      width: 100%;
+      text-align: left; /* If you want the text to be left-aligned on small screens */
+    }
+    h1{
+        font-size: 3em;
+        margin-top: 0.1em;
+        margin-bottom: 0.1em;
+    }
+
+    div li{
+        font-size: 1em;
+        padding-right: 3em;
+    }
+
+    .about-me-content{
+        display: block;
+        font-size: 1em;
+    }
+
+    #subname{
+        font-size: 0.9em;
+        padding-top: 0.3em;
+        color: rgb(58, 54, 54);  
+    }
+    #sub-subname{
+        font-size: 0.7em;
+        padding-top: 0.3em;
+        color: rgb(58, 54, 54);  
+    }
+
+    .work-experience-content{
+        display: block;
+    }
+    .work-experience-content img{
+        height: 100%;
+        width: 100%;
+        align-self: center;
+        padding-top: 1em;
+
+    }
+    #title{
+        padding-top: 1em;
+    }
+
+    .skills button{
+        margin: 1em 0em 1em 1em;
+        width: 10em;
+        font-size: 0.9em;
+
+    }
+
+ 
+    .project-contents iframe{
+        margin-top: 3em;
+        height:100%;
+        width: 100%;
+    }
+    
+    
+
+}
+   
