@@ -82,7 +82,7 @@ function toLightMode(){
     // document.getElementsByClassName('sub-subname').style.color='white';
 
     skillTags=document.querySelectorAll('.skills button');
-    for(let i=1;i<skillTags.length;i++){
+    for(let i=0;i<skillTags.length;i++){
         skillTags[i].style.backgroundColor='rgb(206, 147, 216)';
     }
    
