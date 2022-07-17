@@ -12,12 +12,11 @@
 
      <!-- CSS File -->
      <link rel="stylesheet" href="portfolio.css">
-     <!-- JS File -->
-     <script src="portfolioscript.js"></script>
+     
 
 </head>
 
-<body>
+<body id="body" >
     <li><button id="hamburger-button" onclick="showNavbar()"><span class="material-symbols-outlined hamburger" id="hamburger">
         menu
         </span>
@@ -51,15 +50,24 @@
           
         </ul>
 
-        <ul class="contact-me">
+        <ul class="right-nav-elements">
             <li>
-                <button class="dropbtn">Contact Me<span class="material-symbols-outlined drop-down">
-                    arrow_drop_down </span>
-                </button> 
-                <div class="dropdown-content">
-                    <a href="">Linkdin</a>
-                    <a href="">Email</a>
-                </div>
+                <span class="contact-me-span">
+                    <button class="dropbtn">Contact Me
+                     <span class="material-symbols-outlined drop-down" >
+                    arrow_drop_down </span> 
+                    </button> 
+                    <div class="dropdown-content">
+                        <a href="">Linkdin <i class="fa-thin fa-envelope"></i></a>
+                        <a href="">Email</a>
+                    </div>
+                </span>
+                <span class="material-symbols-outlined dark-mode" id="dark-mode"onclick="toLightMode()">
+                    dark_mode
+                    </span>
+                    <span class="material-symbols-outlined light-mode" id="light-mode"onclick="toDarkMode()">
+                        light_mode
+                        </span>    
             
             </li>
         </ul>
@@ -69,11 +77,13 @@
 <!-- header -->
     <header>
         
+            
         <div class="header-content">
         <span class="material-symbols-outlined code-icon">
             code
             </span>
         <h1>Ayushi Choudhary</h1>
+        <p>I <span id="changing">Code</span>.</p>
         </div>
 
     </header>
@@ -82,7 +92,7 @@
         <h1>
             ABOUT ME
         </h1>
-        <hr>
+   
         <div class="about-me-content">
             <p>Computer, Data Science, and Programming student, with a holistic knowledge of tech, coding, design, and development. Always working to make a significant contribution to the team and towards a better tomorrow. Dreaming to work positively towards societal development and for personal growth. Constantly longing for exciting & meaningful challenges. Highly ethical, dependable, and dedicated.</p>
             <img src="https://wallpapercave.com/wp/wp7997000.jpg">
@@ -94,16 +104,16 @@
         <h1>
             Education
         </h1>
-      <hr>
+     
       <br>
         <ul class="education-boxes">
         <div id="CS-Hons">         
         <li>BSC. COMPUTER SCIENCE HONS </li>
-        <li id="subname">Indraprastha College for Women, University of Delhi</li>
-        <li id="sub-subname">(2020-2023) </li>
+        <li class="subname">Indraprastha College for Women, University of Delhi</li>
+        <li class="sub-subname">(2020-2023) </li>
         <br>
-        <li id="sub-subname"><b>CGPA: </b>9.52/10</li>
-        <li id="sub-subname"><b>Releavent Courses: </b>
+        <li class="sub-subname"><b>CGPA: </b>9.52/10</li>
+        <li class="sub-subname"><b>Releavent Courses: </b>
             <ul class="list-of-courses">
                 <li>Data Structures and Algorithms</li>
                 <li>Database Management Systems</li>
@@ -117,12 +127,12 @@
         </div>  
       
         <div id="BSC-DS">
-        <li id="not-justified">BSC. DATA SCIENCE AND PROGRAMMING </li>
-        <li id="subname">Indian Institute of Technology, Madras</li>
+        <li>BSC. DATA SCIENCE AND PROGRAMMING </li>
+        <li class="subname">Indian Institute of Technology, Madras</li>
         <br>
       
-        <li id="sub-subname"><b>CGPA: </b>9.4/10</li>
-        <li id="sub-subname"><b>Releavent Courses: </b>
+        <li class="sub-subname"><b>CGPA: </b>9.4/10</li>
+        <li class="sub-subname"><b>Releavent Courses: </b>
             <ul class="list-of-courses">
                 <li>Mathematics and Statistics</li>
                 <li>Machine Learning Foundations</li>
@@ -138,17 +148,17 @@
         <h1>
             Work Experience
         </h1>
-        <hr>
+       
         <div class="work-experience-content">
             
                 <span>
                     <p id="title">TECHNICAL HEAD</p>
                     
-                    <p id="subname">Ananta-The Science Society IP College</p>
-                    <p id="sub-subname">(Aug 2021 - Present)</p>
+                    <p class="subname">Ananta-The Science Society IP College</p>
+                    <p class="sub-subname">(Aug 2021 - Present)</p>
                     
                
-                    <p id="sub-subname">Coordinate with fellow core team members and department representatives to provide technical support. Maintain and manage work in Graphics Team, Society's Website (Google Sites), Google Drive, and Social Media Handle. Maintain scheduling and event calendars. Coordinate conferences, meetings, and events like webinars and quizzes. Recruit, interview, and select society members.</p>
+                    <p class="sub-subname">Coordinate with fellow core team members and department representatives to provide technical support. Maintain and manage work in Graphics Team, Society's Website (Google Sites), Google Drive, and Social Media Handle. Maintain scheduling and event calendars. Coordinate conferences, meetings, and events like webinars and quizzes. Recruit, interview, and select society members.</p>
                   
                 </span>
             <img src="https://us.123rf.com/450wm/totallyout/totallyout1612/totallyout161200073/67685721-certificate-retro-design-template.jpg?ver=6">
@@ -171,11 +181,11 @@
            
             <p id="title">CONTENT WRITER</p>
             
-            <p id="subname">LA MUSE</p>
-            <p id="sub-subname">(Dec 2020 - Feb 2021)</p>
+            <p class="subname">LA MUSE</p>
+            <p class="sub-subname">(Dec 2020 - Feb 2021)</p>
     
              
-            <p id="sub-subname">Created creative graphics for the Society. This included graphics for various Instagram Stories and Posts</p>
+            <p class="sub-subname">Created creative graphics for the Society. This included graphics for various Instagram Stories and Posts</p>
           
        </span>
        <img src="https://us.123rf.com/450wm/totallyout/totallyout1612/totallyout161200073/67685721-certificate-retro-design-template.jpg?ver=6">
@@ -186,11 +196,11 @@
     <!-- skills -->
     <div class="skills" id="skills">
         <h1>Skills</h1>
-        <hr>
-        <button class="blue">C++/Python</button> 
-        <button class="pink">html/css</button> <button class="blue">CS Fundamentals</button>
-        <button class="pink">Data Analysis</button> <button class="blue">Mathematics/Statistics</button>
-        <button class="pink">OOPs</button> <button class="blue">Data Structures and Algorithms</button>
+        
+        <button >C++/Python</button> 
+        <button >html/css</button> <button >CS Fundamentals</button>
+        <button >Data Analysis</button> <button >Mathematics/Statistics</button>
+        <button >OOPs</button> <button >Data Structures and Algorithms</button>
     </div>
 
     <!-- projects -->
@@ -198,23 +208,25 @@
         <h1>
             Projects
         </h1>
-      <hr>
       <div class="project-contents">
         <ul>
         <span>
-        <li>Parallax-Dining</li>
-        <li id="subname">A Dynamic Restaurant Website</li>
-        <li id="sub-subname">Coordinate with fellow core team members and department representatives to provide technical support. Maintain and manage work in Graphics Team, Society's Website (Google Sites), Google Drive, and Social Media Handle. Maintain scheduling and event calendars. Coordinate conferences, meetings, and events like webinars and quizzes. Recruit, interview, and select society members.</li> 
+        <li class="CS-Hons">Parallax-Dining</li>
+        <li class="subname">A Dynamic Restaurant Website</li>
+        <li class="sub-subname">Coordinate with fellow core team members and department representatives to provide technical support. Maintain and manage work in Graphics Team, Society's Website (Google Sites), Google Drive, and Social Media Handle. Maintain scheduling and event calendars. Coordinate conferences, meetings, and events like webinars and quizzes. Recruit, interview, and select society members.</li> 
+        <li class="sub-subname"><b >Demo: </b><a href="https://ayushichoudhary-19.github.io/parallaxdining.github.io/">https://ayushichoudhary-19.github.io/parallaxdining.github.io/</a></li>
         </span>  
        
     </ul>
-    <iframe src="https://ayushichoudhary-19.github.io/parallaxdining.github.io/" ></iframe>
+    
     </div>     
     </div>
 
     <br>
     <br>
-
+<!-- JS File -->
+<script src="portfolioscript.js"></script>
+<script src="modes.js"></script>
 
 </body>
 </html>
