@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
 body{
     margin: 0em;
     overflow-y: scroll;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Epilogue', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     word-wrap: break-word;
     text-align: justify;
