@@ -83,7 +83,7 @@ function toLightMode(){
 
     skillTags=document.querySelectorAll('.skills button');
     for(let i=1;i<skillTags.length;i++){
-        skillTags[i].style.backgroundColor='';
+        skillTags[i].style.backgroundColor='rgb(206, 147, 216)';
     }
    
  }
