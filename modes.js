@@ -55,8 +55,8 @@ function toLightMode(){
    
    let h1Tags=document.getElementsByTagName('h1')
    for(let i=1;i<h1Tags.length;i++){
-    h1Tags[i].style.color='var(--purple)';
-    h1Tags[i].style.borderColor='var(--purple)';
+    h1Tags[i].style.color='white';
+    h1Tags[i].style.borderColor='white';
    }
 
    let pTags=document.getElementsByTagName('p')
@@ -81,10 +81,9 @@ function toLightMode(){
     }
     // document.getElementsByClassName('sub-subname').style.color='white';
 
-    let buttonColors=['#E3D85F','#292929','rgb(3,218,198)','#BB86FC','#3889F7','#F44221','#3700B3'];
-    let skillTags=document.querySelectorAll('.skills button');
+    skillTags=document.querySelectorAll('.skills button');
     for(let i=1;i<skillTags.length;i++){
-        skillTags[i].style.backgroundColor=buttonColors[i-1];
+        skillTags[i].style.backgroundColor='';
     }
    
  }
