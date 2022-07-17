@@ -1,8 +1,8 @@
 
 //  light-mode
 function toLightMode(){
-    document.getElementById('dark-mode').style.display='none';
-    document.getElementById('light-mode').style.display='block';
+    document.getElementById('dark-mode').style.display='block';
+    document.getElementById('light-mode').style.display='none';
     document.getElementById('navbar').style.backgroundColor='var(--darkblue)';
     let body= document.getElementById('body');
     body.style.backgroundColor='white';
@@ -44,8 +44,8 @@ function toLightMode(){
  }
  // dark-mode
  function toDarkMode(){
-    document.getElementById('light-mode').style.display='none';
-    document.getElementById('dark-mode').style.display='block';
+    document.getElementById('light-mode').style.display='block';
+    document.getElementById('dark-mode').style.display='none';
     document.getElementById('navbar').style.backgroundColor='var(--darkmodeblue)';
     let body= document.getElementById('body');
     body.style.backgroundColor='var(--offblack)';
