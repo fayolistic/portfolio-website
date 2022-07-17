@@ -500,6 +500,8 @@ li li{
      /* education */
     .education-boxes{
         display:block;
+margin:1em;
+padding 1%;
     }
 
     #BSC-DS, #CS-Hons{
@@ -535,9 +537,8 @@ li li{
     }
 
     .skills button{
-        margin: 1em 0em 1em 0em;
+        margin: 1em 0em 1em 1em;
         width: 10em;
-padding:2%;
         font-size: 0.9em;
 
     }
