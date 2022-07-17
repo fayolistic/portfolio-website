@@ -6,7 +6,7 @@ body{
     font-family: 'Epilogue', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     word-wrap: break-word;
-    text-align: justify;
+    text-align: left;
     padding: 0em;
     width: 100%;
     background-color: white; 
@@ -15,8 +15,7 @@ body{
 }
 
 :root{
-   --green:#88e7ce;;
-   --lightblue: ;
+   --green:#88e7ce;
    --darkblue:#2b546a;
    --darkmodeblue:#1d3d4f;
    --grey:#292929;
@@ -536,8 +535,9 @@ li li{
     }
 
     .skills button{
-        margin: 1em 0em 1em 1em;
+        margin: 1em 0em 1em 0em;
         width: 10em;
+padding:2%;
         font-size: 0.9em;
 
     }
