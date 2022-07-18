@@ -549,7 +549,12 @@ padding 1%;
         width: 100%;
     }
     
-    
+    footer {
+display:flex;
+padding: 5%;
+background-color:car(--darkblue);
+color:white;
+}
 
 }
    
