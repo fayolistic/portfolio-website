@@ -38,7 +38,13 @@ function toLightMode(){
     for(let i=0;i<subSubNameTags.length;i++){
         subSubNameTags[i].style.color='rgb(58, 54, 54)';
     }
-    
+
+    skillTags=document.querySelectorAll('.skills button');
+    for(let i=0;i<skillTags.length;i++){
+        skillTags[i].style.backgroundColor='var(--green)';
+    }
+   
+
     
     
  }
