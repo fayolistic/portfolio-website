@@ -6,4 +6,4 @@ https://ayushichoudhary-19.github.io/myportfolio
 The website has both night and dark modes.
 
 # Responsive
-It is fully responsive (looks well on all the devices)
+It is fully responsive.
