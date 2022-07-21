@@ -1,5 +1,4 @@
-# myportfolio
-## Tech Stack
+# Tech Stack
 HTML
 CSS
 JavaScript
