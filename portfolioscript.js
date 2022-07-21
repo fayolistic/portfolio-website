@@ -1,16 +1,14 @@
 function showNavbar(){
     
-   document.getElementById('navbar').style.display='grid';
+   document.getElementById('navbar').style.width='100%';
+   document.getElementById('navbar').style.visibility='visible';
    document.getElementById('hamburger').style.display='none';
    document.getElementById('close-icon').style.display='block';
-   document.getElementById('body').style.overflowY='hidden';
-
 
 }
 function hideNavbar(){
-    document.getElementById('navbar').style.display='none';
+   document.getElementById('navbar').style.width='0em';
+    document.getElementById('navbar').style.visibility='hidden';
     document.getElementById('close-icon').style.display='none';
     document.getElementById('hamburger').style.display='block';
-    document.getElementById('body').style.overflowY='hidden';
-    document.getElementById('body').style.overflowY='scroll';
  }

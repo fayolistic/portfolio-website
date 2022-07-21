@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 body{
     margin: 0em;
     overflow-y: scroll;
-    font-family: 'Epilogue', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Lato', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     overflow-x: hidden;
     word-wrap: break-word;
     text-align: left;
@@ -15,7 +16,7 @@ body{
 }
 
 :root{
-   --darkblue:#2b546a;
+   --blue:#3fb1ef;
    --darkmodeblue:#1d3d4f;
    --grey:#292929;
    --darkgrey:#131417;
@@ -28,8 +29,6 @@ nav a{
     text-decoration: none;
     color: white;
     padding: 0.8em;
-    border-radius: 2em;
-    
 }
 nav a:active{
     text-decoration: none;
@@ -37,11 +36,8 @@ nav a:active{
     
 }
 nav a:hover{
-    background-color: rgba(255, 255, 255);
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.315);
-    color: black;
-    
-    transition: 0.5s;
+    border-bottom: 3px solid white;
+    transition: all 0.3s ease-in-out;
 }
 
 
@@ -54,11 +50,11 @@ ul{
     padding: 0em;
 }
 h1{
-    font-size: 7em;
+    font-size: 4em;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
-    color: var(--darkblue);
-    border-bottom: 5px solid var(--darkblue);
+    color: var(--blue);
+    border-bottom: 5px solid var(--blue);
     width: fit-content;
 }
 header h1{
@@ -73,14 +69,15 @@ div li{
 
 
 #navbar{
-background-color:var(--darkblue);
+/* background-color:var(--blue); */
 width: 100%;
 height: auto;
 margin: 0em 0em;
-position: fixed;
+/* position: fixed; */
 display: grid;
 grid-template-columns: 8fr 1fr;
-box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+background:none;
+/* box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2); */
 
 }
 
@@ -107,6 +104,10 @@ div{
 .drop-down{
     font-size:16px !important;
  }
+.drop-down:hover{
+    transform: rotate(180deg);
+    transition: all 1s ease-in-out ;
+ }
  
   .dropbtn{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -115,13 +116,16 @@ div{
     border: none;
     color: white;
     padding-top: 1em;
+    
  
   }
 
  .dropdown-content{
-    display: none;
+    overflow: hidden;
     min-width: fit-content;
     padding: 0em;
+    height: 0em;
+    transition: all 0.5s ease-out;
  }
 
  .dropdown-content a {
@@ -139,10 +143,14 @@ div{
   /* Show the right-nav-elements menu on hover */
   .contact-me-span:hover .dropdown-content {
     display: block;
-    height:2px;
+    transition: all 0.5s ease-in;
+    height:6em;
   }
   .right-nav-elements li{
     display: flex;
+  }
+  .contact-me-span{
+    width: 11em;
   }
 
 
@@ -182,39 +190,39 @@ div{
 
   .header-content{
     text-align: center;
-    padding-top: 17%;
+    padding-top: 10%;
     padding-bottom: 20%;
     padding-left: 2em;
     padding-right: 2em;
 
   }
   header{
+    
     animation: gradient-background 10s infinite;
   }
 
   @keyframes gradient-background{
-    0%{background-color: white;}
-    5%{background-color: #f9fbfe;}
-    15%{background-color: aliceblue}
-    20%{background-color: rgb(196, 238, 255);}
-    25%{background-color: rgb(168, 207, 245);}
-    30%{background-color: var(--blue);}
-    35%{background-color: rgb(129, 227, 254);}
-    40%{background-color: rgb(129, 254, 219);}
-    45%{background-color: rgb(129, 254, 162);}
-    50%{background-color: rgb(146, 254, 129);}
-    55%{background-color: rgb(229, 254, 129);}
-    60%{background-color: rgb(254, 233, 129);}
+    
+    0%{background-color: rgb(149, 71, 253)}
+    5%{background-color: #3a59f5;}
+    15%{background-color: rgb(10, 104, 186)}
+    20%{background-color: rgb(13, 178, 243);}
+    25%{background-color: rgb(11, 127, 243);}
+    30%{background-color: rgb(11, 162, 243);}
+    35%{background-color: rgb(19, 223, 245);}
+    40%{background-color: rgb(52, 245, 190);}
+    45%{background-color: rgb(83, 247, 127);}
+    50%{background-color: rgb(129, 253, 109);}
+    55%{background-color: rgb(219, 252, 88);}
+    60%{background-color: rgb(253, 225, 88);}
     65%{background-color: rgb(254, 204, 129);}
     70%{background-color: rgb(254, 167, 129);}
     75%{background-color: rgb(254, 129, 129);}
-    80%{background-color: rgb(249, 160, 172);}
-    85%{background-color: rgb(255, 190, 231)}
-    90%{background-color: rgb(252, 223, 241)}
-    95%{background-color: rgb(253, 235, 246)}
-    100%{background-color: rgb(253, 245, 250)}
-
-    
+    80%{background-color: rgb(243, 130, 145);}
+    85%{background-color: rgb(253, 121, 205)}
+    90%{background-color: rgb(253, 37, 170)}
+    95%{background-color: rgb(252, 63, 78)}
+    100%{background-color: rgb(127, 42, 254);} 
   } 
 .code-icon{
     font-size: 100px !important;
@@ -242,9 +250,9 @@ div{
     align-items: center;
 }
 .about-me-content img{
-    width: 100%;
-    height: 100%;
-    border-radius: 30em;
+    width: 70%;
+    height: auto;
+    border-radius: 4em;
 
 }
 
@@ -315,11 +323,9 @@ li li{
 }
 
 .work-experience-content{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    column-gap: 2em;
-    align-items: center ;
-    row-gap: 1em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3em;
 }
 .work-experience-content p{
     margin: 0em;
@@ -332,21 +338,39 @@ li li{
 
 /* Skills */
 .skills{
-    background: rgb(201, 233, 255);
+    background-color: rgb(201, 233, 255);
     padding-top: 7%;
     padding-bottom: 7%;
     
 }
 
-.skills button{
-    border: 0px;
-    border-radius: 1.6em;
+.skills-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.each-skill-heading{
+    color: black;
+}
+.view-more{
+    border: 1.5px solid var(--blue);
+    padding: 1%;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to right, white 50%, var(--blue) 50%);
+    transition: background-position 0.5s;
+
+}
+.arrow{
     font-size: 1em;
-    padding: 1em;
-    margin: 2em 3em 1em 3em;
-    width: 15em;
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.251);
-    background-color: white;
+}
+.view-more:hover{
+    border: 1.5px solid var(--blue);
+    padding: 1%;
+    background-color: var(--blue);
+    color: white;
+    background-position: -100% 100%;
+}
+.arrow{
+    font-size: 1em;
 }
 
 
@@ -362,7 +386,7 @@ footer {
     display:flex;
     padding:3%;
     height:4%;
-    background-color:var(--darkblue);
+    background-color:var(--blue);
     }
 footer li{
     color: white !important;
@@ -391,7 +415,7 @@ footer a{
     
       
         h1{
-            font-size: 5em;
+            font-size: 3em;
             margin-top: 0.2em;
             margin-bottom: 0.2em;
         }
@@ -417,11 +441,14 @@ footer a{
     }
     
     #navbar{
-        display: none;
+        visibility: hidden;
         grid-template-columns: 2fr 1fr;
-        height: 21em;
-        
-
+        height: 21em; 
+        width: 0;
+        position: fixed;
+        background-color: var(--blue);
+        color: #000;
+        transition: all 0.5s ease-in-out;
     }
 
     nav ul{
@@ -434,6 +461,7 @@ footer a{
       padding-top: 2em;
       text-align: left; /* If you want the text to be left-aligned on small screens */
     }
+   
     h1{
         font-size: 3em;
         margin-top: 0.1em;
@@ -449,12 +477,13 @@ footer a{
         float: right;
     }
     .dropdown-content{
-        display: none;
         background:none;
-        min-width: fit-content;
         box-shadow: 0px 0px 0px 0px;
         z-index: 1;
+        overflow: hidden;
         padding: 0em;
+        height: 0em;
+        transition: all 0.5s ease-out;
      }
      
   .dropbtn{
@@ -514,6 +543,11 @@ footer a{
         display: block;
         font-size: 1em;
     }
+    .about-me-content img{
+        width: 100%;
+        height: 100%;
+        border-radius: 30em;
+    }
      /* education */
     .education-boxes{
         display:block;
@@ -550,12 +584,11 @@ footer a{
         padding-top: 1em;
     }
 
-    .skills button{
-        margin: 1em 0em 1em 1em;
-        width: 10em;
-        font-size: 0.9em;
+    .skills-grid{
+        display:block;
 
     }
+   
 
  
     .project-contents iframe{

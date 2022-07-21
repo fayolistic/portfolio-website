@@ -3,7 +3,6 @@
 function toLightMode(){
     document.getElementById('dark-mode').style.display='block';
     document.getElementById('light-mode').style.display='none';
-    document.getElementById('navbar').style.backgroundColor='var(--darkblue)';
     let body= document.getElementById('body');
     body.style.backgroundColor='white';
 
@@ -13,8 +12,8 @@ function toLightMode(){
     let h1Tags=document.getElementsByTagName('h1')
     //loops starts from 1 because I don't want the first heading i.e.my name to change the color 
     for(let i=1;i<h1Tags.length;i++){
-    h1Tags[i].style.color='var(--darkblue)';
-    h1Tags[i].style.borderColor='var(--darkblue)'}
+    h1Tags[i].style.color='var(--blue)';
+    h1Tags[i].style.borderColor='var(--blue)'}
 
     let pTags=document.getElementsByTagName('p')
     for(let i=0;i<pTags.length;i++){
@@ -39,10 +38,10 @@ function toLightMode(){
         subSubNameTags[i].style.color='rgb(58, 54, 54)';
     }
 
-    skillTags=document.querySelectorAll('.skills button');
-    for(let i=0;i<skillTags.length;i++){
-        skillTags[i].style.backgroundColor='var(--green)';
-    }
+    document.getElementsByClassName('skills')[0].style.backgroundColor='rgb(201, 233, 255)';
+    document.getElementsByTagName('.each-skill-heading').style.color='black';
+
+
    
 
     
@@ -52,7 +51,6 @@ function toLightMode(){
  function toDarkMode(){
     document.getElementById('light-mode').style.display='block';
     document.getElementById('dark-mode').style.display='none';
-    document.getElementById('navbar').style.backgroundColor='var(--darkmodeblue)';
     let body= document.getElementById('body');
     body.style.backgroundColor='var(--offblack)';
     body.style.color='white';
@@ -85,12 +83,10 @@ function toLightMode(){
     for(let i=0;i<subSubNameTags.length;i++){
         subSubNameTags[i].style.color='white';
     }
-    // document.getElementsByClassName('sub-subname').style.color='white';
 
-    skillTags=document.querySelectorAll('.skills button');
-    for(let i=0;i<skillTags.length;i++){
-        skillTags[i].style.backgroundColor='rgb(206, 147, 216)';
-    }
+
+    document.getElementsByClassName('skills')[0].style.backgroundColor='var(--grey)';
+    document.getElementsByTagName('.each-skill-heading').style.color='white';
    
  }
  
