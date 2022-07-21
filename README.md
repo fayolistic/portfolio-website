@@ -1,9 +1,15 @@
 # myportfolio
-This is my personal portfolio build using basic HTML, CSS and JavaScript.
-https://ayushichoudhary-19.github.io/myportfolio
+## Tech Stack
+![image](https://user-images.githubusercontent.com/73214455/180189071-60b5502f-9cf0-44b3-857e-1a435b814453.png)
 
-# Modes
-The website has both night and dark modes.
+HTML
+CSS
+JavaScript
 
-# Responsive
-It is fully responsive.
+# Features
+- Fully Responsive. 
+- Has a dark and light mode feature.
+
+# Website Preview
+You can check out the website hosted using GitHub Pages on- https://ayushichoudhary-19.github.io/myportfolio
+
