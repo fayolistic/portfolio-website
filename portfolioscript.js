@@ -12,3 +12,19 @@ function hideNavbar(){
     document.getElementById('close-icon').style.display='none';
     document.getElementById('hamburger').style.display='block';
  }
+
+window.addEventListener('scroll', function(){
+   var letsTalkButton = document.querySelector('.lets-talk-btn');
+   var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+   var triggerOffset = 100; // Adjust the trigger offset as needed
+   
+ 
+   if (scrollPosition > triggerOffset) {
+     letsTalkButton.classList.add('active');
+     letsTalkButton.innerHTML=" <span class=\"material-symbols-outlined\"> chat </span>";
+
+   } else {
+     letsTalkButton.classList.remove('active');
+     letsTalkButton.innerHTML="LET'S TALK";
+   }
+ });

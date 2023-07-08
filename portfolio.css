@@ -117,7 +117,6 @@ div{
     color: white;
     padding-top: 1em;
     
- 
   }
 
  .dropdown-content{
@@ -138,7 +137,7 @@ div{
     text-align: left;
     margin-bottom: 2%;
     }
-    
+
   
   /* Show the right-nav-elements menu on hover */
   .contact-me-span:hover .dropdown-content {
@@ -158,7 +157,8 @@ div{
     .dark-mode{
         display: block;
         color: white;
-        padding: 10%;
+        padding: 6%;
+        margin-right: 2em;
         height: 1em;
         background: none;
         border-radius: 10em;
@@ -173,7 +173,8 @@ div{
     .light-mode{
         display: none;
         color: white;
-        padding: 10%;
+        padding: 6%;
+        margin-right: 2em;
         height: 1em;
         background: none;
         border-radius: 10em;   
@@ -190,7 +191,7 @@ div{
 
   .header-content{
     text-align: center;
-    padding-top: 10%;
+    padding-top: 1%;
     padding-bottom: 20%;
     padding-left: 2em;
     padding-right: 2em;
@@ -198,7 +199,7 @@ div{
   }
   header{
     
-    animation: gradient-background 10s infinite;
+    animation: gradient-background 20s infinite;
   }
 
   @keyframes gradient-background{
@@ -225,9 +226,61 @@ div{
     100%{background-color: rgb(127, 42, 254);} 
   } 
 .code-icon{
-    font-size: 100px !important;
+    font-size: 50px !important;
 }
 
+header img{
+    width: 20%;
+    height: auto;
+    border-radius: 4em;
+
+}
+
+
+.lets-talk-btn{
+    margin-bottom: 1em; 
+    padding-left: 2%;
+    padding-right: 2%;
+    cursor: pointer;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 3em;
+    color: black;
+    font-family: Montserrat,sans-serif;
+    font-weight: 700;
+    background: white;
+    transition:  0.5s;
+    border: 1px solid white;
+    transform: translate(0%,0%);
+    transition: transform 0.5s;
+    
+}
+.lets-talk-btn.active {
+    transform: translate(755%,450%);
+    position: fixed;
+    margin-bottom: 1em;
+    cursor: pointer;
+    border-radius: 1em;
+    background-color: #5BE9B9;
+    border: none;
+
+
+  
+  }
+/* .lets-talk-btn:hover{
+    margin-bottom: 1em; 
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 3em;
+    /* color:rgb(120,67,233); */
+    /* color: #5BE9B9;  */
+    /* color:black;
+    background: rgba(255, 255, 255, 0.404);
+    border: 1px rgba(255, 255, 255, 0.404);
+
+} */ 
 
 
 /* about me */
@@ -249,12 +302,7 @@ div{
     column-gap: 2em;
     align-items: center;
 }
-.about-me-content img{
-    width: 70%;
-    height: auto;
-    border-radius: 4em;
 
-}
 
 
 /* Education */
@@ -484,11 +532,14 @@ footer a{
         padding: 0em;
         height: 0em;
         transition: all 0.5s ease-out;
-     }
+    }
      
   .dropbtn{
     padding-top: 0em;
   }
+
+
+
     /* darkmode */
     .right-nav-elements li{
         flex-direction: column;
@@ -516,14 +567,13 @@ footer a{
      }
    
 
-
      #hamburger:hover, #hamburger:active{
         background-color: rgba(70, 58, 58, 0.164);
         transition: all 0.5s ease-in-out;
      }
      #close-icon:active,#close-icon:hover{
         background-color: rgba(255, 255, 255, 0.315);
-        transition: all 0.5s ease-in-out;
+        transition: all 0.1s ease-in-out;
      }
      #close-icon{
         display: block;
@@ -535,7 +585,18 @@ footer a{
      }
      
 
-
+     .lets-talk-btn.active {
+        transform: translate(220%,100%);
+        position: fixed;
+        padding-right:0.2em;
+        margin-bottom: 1em; 
+        cursor: pointer;
+        border-radius: 10em;
+        
+      }
+      .chat{
+        font-size: larger;
+      }
 
    
      /* about me */

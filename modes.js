@@ -7,7 +7,14 @@ function toLightMode(){
     body.style.backgroundColor='white';
 
     document.getElementById('hamburger').style.color='black';
-   
+    
+    let letsTalkBtn= document.getElementsByClassName('lets-talk-btn')[0];
+    letsTalkBtn.style.backgroundColor='white';
+    letsTalkBtn.style.border="1px solid white";
+    letsTalkBtn.style.color="black";
+
+
+
     
     let h1Tags=document.getElementsByTagName('h1')
     //loops starts from 1 because I don't want the first heading i.e.my name to change the color 
@@ -56,7 +63,13 @@ function toLightMode(){
     body.style.color='white';
     
     document.getElementById('hamburger').style.color='white';
-   
+
+    let letsTalkBtn= document.getElementsByClassName('lets-talk-btn')[0];
+    letsTalkBtn.style.backgroundColor='black';
+    letsTalkBtn.style.border="1px solid black";
+    letsTalkBtn.style.color="white";
+    
+
    let h1Tags=document.getElementsByTagName('h1')
    for(let i=1;i<h1Tags.length;i++){
     h1Tags[i].style.color='white';
