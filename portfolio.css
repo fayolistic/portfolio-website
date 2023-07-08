@@ -123,8 +123,9 @@ div{
     overflow: hidden;
     min-width: fit-content;
     padding: 0em;
-    height: 0em;
     transition: all 0.5s ease-out;
+    visibility: hidden;
+    opacity: 0;
  }
 
  .dropdown-content a {
@@ -143,7 +144,8 @@ div{
   .contact-me-span:hover .dropdown-content {
     display: block;
     transition: all 0.5s ease-in;
-    height:6em;
+    visibility: visible;
+    opacity: 1;
   }
   .right-nav-elements li{
     display: flex;
@@ -197,12 +199,12 @@ div{
     padding-right: 2em;
 
   }
-  header{
+  .header-background-light{
     
-    animation: gradient-background 20s infinite;
+    animation: gradient-background-light 20s infinite;
   }
 
-  @keyframes gradient-background{
+  @keyframes gradient-background-light{
     
     0%{background-color: rgb(149, 71, 253)}
     5%{background-color: #3a59f5;}
@@ -225,7 +227,35 @@ div{
     95%{background-color: rgb(252, 63, 78)}
     100%{background-color: rgb(127, 42, 254);} 
   } 
-.code-icon{
+
+  .header-background-dark{
+    
+    animation: gradient-background-dark 20s infinite;
+  }
+  @keyframes gradient-background-dark {
+    0% {background-color: rgb(50, 0, 116);}
+    5% {background-color: #001063;}
+    10% {background-color: rgb(0, 42, 79);}
+    15% {background-color: rgb(0, 66, 92);}
+    20% {background-color: rgb(0, 38, 77);}
+    25% {background-color: rgb(1, 47, 72);}
+    30% {background-color: rgb(0, 0, 0);}
+    35% {background-color: rgb(1, 40, 29);}
+    40% {background-color: rgb(2, 33, 11);}
+    45% {background-color: rgb(7, 35, 3);}
+    50% {background-color: rgb(42, 52, 0);}
+    55% {background-color: rgb(40, 34, 0);}
+    60% {background-color: rgb(48, 29, 0);}
+    65% {background-color: rgb(43, 13, 0);}
+    70% {background-color: rgb(50, 0, 0);}
+    75% {background-color: rgb(55, 0, 7);}
+    80% {background-color: rgb(49, 0, 31);}
+    85% {background-color: rgb(45, 0, 28);}
+    90% {background-color: rgb(46, 0, 4);}
+    95% {background-color: rgb(37, 0, 94);}
+    100% {background-color: rgb(0, 0, 0);}
+  }
+  .code-icon{
     font-size: 50px !important;
 }
 
@@ -256,7 +286,7 @@ header img{
     
 }
 .lets-talk-btn.active {
-    transform: translate(755%,450%);
+    transform: translate(750%,300%);
     position: fixed;
     margin-bottom: 1em;
     cursor: pointer;
@@ -587,7 +617,7 @@ footer a{
      
 
      .lets-talk-btn.active {
-        transform: translate(11.3em,8em);
+        transform: translate(450%,400%);
         position: fixed;
         background:none;
         cursor: pointer;
