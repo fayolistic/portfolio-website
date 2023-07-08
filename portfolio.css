@@ -21,7 +21,7 @@ body{
    --grey:#292929;
    --darkgrey:#131417;
    --offblack: #121212;
-   --purple:#9649f3;
+   --purple:#7843e9;
 
 }
 
@@ -543,17 +543,23 @@ footer a{
     
     #navbar{
         visibility: hidden;
-        grid-template-columns: 2fr 1fr;
-        height: 21em; 
+        grid-template-columns:1 fr 0 fr;
+        height: 100vh; 
         width: 0;
         position: fixed;
-        background-color: var(--blue);
-        color: #000;
+        background-color: rgba(255, 255, 255, 0.973);
+
         transition: all 0.5s ease-in-out;
+        z-index: 2;
+    }
+ 
+    nav a{
+        color: var(--purple);
     }
 
     nav ul{
-        padding: 0em 2em;
+        padding-top: 50%;
+        padding-left: 38%;
     }
     nav li {
       float: none;
@@ -575,7 +581,7 @@ footer a{
     }
 
     .right-nav-elements li{
-        float: right;
+        display: none;
     }
     .dropdown-content{
         background:none;
@@ -633,7 +639,7 @@ footer a{
         display: block;
         font-size: 2em;
         padding: 0.5em;
-        color: white;
+        color: var(--purple);
         width: max-content;
         border-radius: 1em;
      }
