@@ -283,16 +283,17 @@ header img{
     border: 1px solid white;
     transform: translate(0%,0%);
     transition: transform 0.5s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
     
 }
 .lets-talk-btn.active {
-    transform: translate(750%,300%);
+    transform: translate(1%,1%);
     position: fixed;
     margin-bottom: 1em;
     cursor: pointer;
     border-radius: 1em;
-    background-color: #5BE9B9;
     border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
 
 
   
@@ -509,6 +510,15 @@ footer a{
 
     }
     
+    .lets-talk-btn.active {
+        transform: translate(617%,471%);
+        position: fixed;
+        background:none;
+        cursor: pointer;
+        border-radius: 10em;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+      }
+  
 
 
   /* for phone screens */
@@ -614,18 +624,23 @@ footer a{
         width: max-content;
         border-radius: 1em;
      }
-     
-
+    
+     header img{
+        width:65%
+    }
      .lets-talk-btn.active {
-        transform: translate(450%,400%);
+        transform: translate(371%,400%);
         position: fixed;
         background:none;
         cursor: pointer;
         border-radius: 10em;
-        
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
       }
   
-
+      .header-content{
+        padding-top: 20%;
+        padding-bottom: 30%;
+      }
    
      /* about me */
     .about-me-content{
