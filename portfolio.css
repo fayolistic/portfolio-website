@@ -57,6 +57,10 @@ h1{
     border-bottom: 5px solid var(--blue);
     width: fit-content;
 }
+
+header{
+    height:100vh;
+}
 header h1{
     color: #000;
     border: none;
@@ -263,6 +267,10 @@ header img{
     width: 20%;
     height: auto;
     border-radius: 4em;
+    position: absolute; 
+  top: 90%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
 
 }
 
@@ -287,7 +295,10 @@ header img{
     
 }
 .lets-talk-btn.active {
-    transform: translate(1%,1%);
+    position: fixed;
+    bottom: 10%;
+    right: 2%;
+  transform: translate(50%, 50%);
     position: fixed;
     margin-bottom: 1em;
     cursor: pointer;
@@ -509,7 +520,7 @@ footer a{
         padding-top: 1em;
 
     }
-    
+/*     
     .lets-talk-btn.active {
         transform: translate(617%,471%);
         position: fixed;
@@ -518,7 +529,7 @@ footer a{
         border-radius: 10em;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
       }
-  
+   */
 
 
   /* for phone screens */
@@ -629,7 +640,9 @@ footer a{
         width:65%
     }
      .lets-talk-btn.active {
-        transform: translate(371%,400%);
+        bottom: 10%;
+        right: 4%;
+      transform: translate(50%, 50%);
         position: fixed;
         background:none;
         cursor: pointer;
