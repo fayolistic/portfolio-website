@@ -268,9 +268,9 @@ header img{
     height: auto;
     border-radius: 4em;
     position: absolute; 
-  top: 90%; 
-  left: 50%; 
-  transform: translate(-50%, -50%); 
+     top: 90%; 
+     left: 50%; 
+    transform: translate(-50%, -50%);
 
 }
 
@@ -637,7 +637,10 @@ footer a{
      }
     
      header img{
-        width:65%
+        width:65%;
+         top: 70%; 
+         left: 50%; 
+         
     }
      .lets-talk-btn.active {
         bottom: 10%;
