@@ -567,6 +567,7 @@ footer a{
      }
    
 
+
      #hamburger:hover, #hamburger:active{
         background-color: rgba(70, 58, 58, 0.164);
         transition: all 0.5s ease-in-out;
@@ -586,17 +587,14 @@ footer a{
      
 
      .lets-talk-btn.active {
-        transform: translate(220%,100%);
+        transform: translate(11.3em,8em);
         position: fixed;
-        padding-right:0.2em;
-        margin-bottom: 1em; 
+        background:none;
         cursor: pointer;
         border-radius: 10em;
         
       }
-      .chat{
-        font-size: larger;
-      }
+  
 
    
      /* about me */
