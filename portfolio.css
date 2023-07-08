@@ -292,6 +292,7 @@ header img{
     transform: translate(0%,0%);
     transition: transform 0.5s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+ 
     
 }
 .lets-talk-btn.active {
@@ -304,7 +305,8 @@ header img{
     cursor: pointer;
     border-radius: 1em;
     border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.852); 
+    background-color: #7843e9;
 
 
   
@@ -650,7 +652,8 @@ footer a{
         background:none;
         cursor: pointer;
         border-radius: 10em;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+      
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.251); 
       }
   
       .header-content{
