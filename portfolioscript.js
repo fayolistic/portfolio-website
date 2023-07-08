@@ -1,7 +1,9 @@
+document.getElementById('close-icon').style.display='none';
 function showNavbar(){
     
    document.getElementById('navbar').style.width='100%';
    document.getElementById('navbar').style.visibility='visible';
+   document.getElementsByClassName('left-nav-elements')[0].style.visibility='visible';
    document.getElementById('hamburger').style.display='none';
    document.getElementById('close-icon').style.display='block';
 
@@ -11,6 +13,7 @@ function hideNavbar(){
     document.getElementById('navbar').style.visibility='hidden';
     document.getElementById('close-icon').style.display='none';
     document.getElementById('hamburger').style.display='block';
+    document.getElementsByClassName('left-nav-elements')[0].style.visibility='hidden';
  }
 
 window.addEventListener('scroll', function(){
