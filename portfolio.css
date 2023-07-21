@@ -80,11 +80,11 @@ background-color: rgb(201,148,255) !important;
 width: 100%;
 height: auto;
 margin: 0em 0em;
-/* position: fixed; */
 display: grid;
 grid-template-columns: 8fr 1fr;
 background:none;
 box-shadow: 0 1px 7px rgba(0, 0, 0, 0.379); 
+visibility: visible;
 
 
 }
@@ -219,24 +219,9 @@ header img{
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.852); 
     background-color: var(--purple);
-
-
   
   }
-/* .lets-talk-btn:hover{
-    margin-bottom: 1em; 
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    border-radius: 3em;
-    /* color:rgb(120,67,233); */
-    /* color: #5BE9B9;  */
-    /* color:black;
-    background: rgba(255, 255, 255, 0.404);
-    border: 1px rgba(255, 255, 255, 0.404);
 
-} */ 
 
 
 /* about me */
@@ -531,6 +516,7 @@ footer a{
   }
   .lets-talk-btn{
     padding: 3%;
+
   }
 
 
@@ -597,10 +583,8 @@ footer a{
         right: 4%;
       transform: translate(50%, 50%);
         position: fixed;
-        background:none;
         cursor: pointer;
         border-radius: 10em;
-      
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.251); 
          
       }

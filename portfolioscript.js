@@ -1,3 +1,4 @@
+
 document.getElementById('close-icon').style.display='none';
 function showNavbar(){
     
