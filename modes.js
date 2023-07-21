@@ -24,12 +24,18 @@ function toLightMode(){
     let h1Tags=document.getElementsByTagName('h1')
     //loops starts from 1 because I don't want the first heading i.e.my name to change the color 
     for(let i=1;i<h1Tags.length;i++){
-    h1Tags[i].style.color='var(--blue)';
-    h1Tags[i].style.borderColor='var(--blue)'}
+    h1Tags[i].style.color='var(--black)';
+    h1Tags[i].style.borderColor='var(--black)'}
 
     document.getElementsByTagName('h1')[0].style.color='black'; 
 
+
+
     document.querySelector('.code-icon').style.color='black';
+
+    if(window.innerWidth <= 635){
+        document.querySelector('.Resume-button').style.color='black';
+    }
 
     let pTags=document.getElementsByTagName('p')
     for(let i=0;i<pTags.length;i++){
@@ -73,7 +79,9 @@ function toLightMode(){
     
     document.getElementById('hamburger').style.color='white';
 
-    document.getElementById('navbar').style.boxShadow=box=' 0 1px 7px rgba(255, 255, 255, 0.379)'; 
+    document.getElementById('navbar').style.boxShadow=' 0 1px 7px rgba(255, 255, 255, 0.379)'; 
+
+    document.querySelector('.Resume-button').style.color='white';
     
     document.querySelector('.code-icon').style.color='white';
 

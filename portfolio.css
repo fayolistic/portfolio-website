@@ -55,8 +55,8 @@ h1{
     font-size: 4em;
     margin-top: 0.2em;
     margin-bottom: 0.2em;
-    color: var(--blue);
-    border-bottom: 5px solid var(--blue);
+    color: var(--black);
+    border-bottom: 5px solid var(--black);
     width: fit-content;
 }
 
@@ -84,6 +84,7 @@ display: grid;
 grid-template-columns: 8fr 1fr;
 background:none;
 box-shadow: 0 1px 7px rgba(0, 0, 0, 0.379); 
+
 visibility: visible;
 
 
@@ -341,10 +342,10 @@ li li{
     color: black;
 }
 .view-more{
-    border: 1.5px solid var(--blue);
+    border: 1.5px solid var(--purple);
     padding: 1%;
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, white 50%, var(--blue) 50%);
+    background-image: linear-gradient(to right, white 50%, var(--purple) 50%);
     transition: background-position 0.5s;
 
 }
@@ -352,9 +353,9 @@ li li{
     font-size: 1em;
 }
 .view-more:hover{
-    border: 1.5px solid var(--blue);
+    border: 1.5px solid var(--purple);
     padding: 1%;
-    background-color: var(--blue);
+    background-color: var(--purple);
     color: white;
     background-position: -100% 100%;
 }
@@ -375,7 +376,7 @@ footer {
     display:flex;
     padding:3%;
     height:4%;
-    background-color:var(--blue);
+    background-color:var(--purple);
     }
 footer li{
     color: white !important;
@@ -529,7 +530,7 @@ footer a{
         position: relative;
     }
     .Resume-button{
-        color: var(--purple);
+        color: black;
     }
     
 
