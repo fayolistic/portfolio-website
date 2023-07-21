@@ -6,14 +6,17 @@ function toLightMode(){
     let body= document.getElementById('body');
     body.style.backgroundColor='white';
 
+
     document.getElementById('hamburger').style.color='black';
+
+    document.getElementById('navbar').style.boxShadow=box='0 1px 7px rgba(0, 0, 0, 0.379)'; 
 
     document.getElementsByTagName('header')[0].classList.add('header-background-light');
     document.getElementsByTagName('header')[0].classList.remove('header-background-dark');
     let letsTalkBtn= document.getElementsByClassName('lets-talk-btn')[0];
-    letsTalkBtn.style.backgroundColor='white';
-    letsTalkBtn.style.border="1px solid white";
-    letsTalkBtn.style.color="black";
+    letsTalkBtn.style.backgroundColor='var(--purple)';
+    letsTalkBtn.style.color="white";
+    letsTalkBtn.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.2511)';
 
 
 
@@ -25,6 +28,8 @@ function toLightMode(){
     h1Tags[i].style.borderColor='var(--blue)'}
 
     document.getElementsByTagName('h1')[0].style.color='black'; 
+
+    document.querySelector('.code-icon').style.color='black';
 
     let pTags=document.getElementsByTagName('p')
     for(let i=0;i<pTags.length;i++){
@@ -68,14 +73,18 @@ function toLightMode(){
     
     document.getElementById('hamburger').style.color='white';
 
+    document.getElementById('navbar').style.boxShadow=box=' 0 1px 7px rgba(255, 255, 255, 0.379)'; 
+    
+    document.querySelector('.code-icon').style.color='white';
+
     document.getElementsByTagName('header')[0].classList.add('header-background-dark');
     document.getElementsByTagName('header')[0].classList.remove('header-background-light');
 
 
     let letsTalkBtn= document.getElementsByClassName('lets-talk-btn')[0];
-    letsTalkBtn.style.backgroundColor='black';
-    letsTalkBtn.style.border="1px solid black";
+    letsTalkBtn.style.backgroundColor='var(--purple)';
     letsTalkBtn.style.color="white";
+    letsTalkBtn.style.boxShadow='0 2px 4px rgba(255, 255, 255, 0.251)';
     
 
    let h1Tags=document.getElementsByTagName('h1')
