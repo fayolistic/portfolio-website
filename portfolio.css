@@ -575,7 +575,7 @@ footer a{
         display: grid;
         grid-auto-flow: column;
         padding:10% 0em 0% 40%;
-        right:-1vh;
+        right:-3vh;
         position: relative;
     }
     
