@@ -531,6 +531,8 @@ footer a{
     }
     .Resume-button{
         color: black;
+        background-color: white;
+        padding: 2%;
     }
     
 
