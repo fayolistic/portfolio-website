@@ -39,7 +39,7 @@ nav a:active{
 }
 nav a:hover{
     border-bottom: 3px solid white;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
 
 
@@ -171,6 +171,9 @@ div{
     padding-right: 2em;
 
   }
+  .header-content p{
+    font-size: 2em;
+  }
   
   .code-icon{
     font-size: 50px !important;
@@ -204,10 +207,9 @@ header img{
     transition:  0.5s;
     transform: translate(0%,0%);
     transition: transform 0.5s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
- 
-    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);  
 }
+
 .lets-talk-btn.active {
     position: fixed;
     bottom: 10%;
@@ -220,8 +222,12 @@ header img{
     border: none;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.852); 
     background-color: var(--purple);
-  
-  }
+}
+
+.lets-talk-btn:hover {
+     transform: translateY(-10%);
+     box-shadow: 0 5px 10px rgba(201, 148, 255, 0.591);   
+    }
 
 
 
@@ -594,7 +600,9 @@ footer a{
         padding-top: 20%;
         padding-bottom: 30%;
       }
-   
+
+
+
      /* about me */
     .about-me-content{
         display: block;
