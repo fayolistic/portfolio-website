@@ -38,3 +38,5 @@ window.addEventListener('scroll', function(){
   typeSpeed: 50,
   loop: true,
 });
+
+document.querySelector(".appear-from-left").classList.add("active");
