@@ -21,7 +21,7 @@ body{
    --grey:#292929;
    --darkgrey:#131417;
    --offblack: #121212;
-   --purple:rgb(201,148,255);
+   --purple:#c994ff;
    --cream: #FFFBEB;
    --orange: #FF7F4A;
 
@@ -181,7 +181,7 @@ div{
 }
 
 header img{
-    width: 30%;
+    width: 20%;
     height: auto;
     border-radius: 4em;
     position: absolute; 
