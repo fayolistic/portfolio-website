@@ -33,13 +33,8 @@ window.addEventListener('scroll', function(){
    }
  });
 
-var words = ["Design", "Develop", "Solve","Code"];
-var index = 0;
-
-function changeWord() {
-  var span = document.getElementById("changing-container");
-  span.innerHTML = words[index];
-  index = (index + 1) % words.length;
-}
-
-setInterval(changeWord, 1000);
+ var typed = new Typed('#changing-container', {
+  strings: ['Design', 'Develop', 'Solve','Code'],
+  typeSpeed: 50,
+  loop: true,
+});

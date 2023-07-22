@@ -227,6 +227,7 @@ header img{
 .lets-talk-btn:hover {
      transform: translateY(-10%);
      box-shadow: 0 5px 10px rgba(201, 148, 255, 0.591);   
+     transition: all 0.2s;
     }
 
 
