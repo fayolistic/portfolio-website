@@ -4,6 +4,7 @@
 My personal portfolio https://ayushichoudhary-19.github.io/myportfolio features some of my GitHub projects as well as my resume, education, and technical skills.
 
 This project was built using these technologies:
+
 HTML
 
 CSS
