@@ -1,3 +1,6 @@
+
+forthebadge   forthebadge   forthebadge   GitHub Repo stars   GitHub forks
+
 # Tech Stack
 HTML
 CSS
