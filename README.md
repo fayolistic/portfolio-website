@@ -5,8 +5,11 @@ My personal portfolio https://ayushichoudhary-19.github.io/myportfolio features 
 
 This project was built using these technologies:
 HTML
+
 CSS
+
 JavaScript
+
 VsCode
 
 # Features
