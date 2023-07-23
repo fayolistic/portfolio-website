@@ -41,15 +41,13 @@ function toLightMode(){
     for(let i=0;i<pTags.length;i++){
         pTags[i].style.color='black';
     }
-
-
     
     document.getElementsByClassName('education')[0].style.backgroundColor='#f9fbfe';
 
     
-    document.getElementById('BSC-DS').style.backgroundColor='white';
+    document.getElementById('MCA').style.backgroundColor='white';
     document.getElementById('CS-Hons').style.backgroundColor='white';
-    document.getElementById('BSC-DS').style.color='black';
+    document.getElementById('MCA').style.color='black';
     document.getElementById('CS-Hons').style.color='black';
 
     let subNameTags=document.getElementsByClassName('subname');
@@ -68,15 +66,11 @@ function toLightMode(){
     aboutMe.style.boxShadow=' 7px 7px 2px black';
     aboutMe.style.backgroundColor='#ffa27b;';
 
-    const skillsItems = document.querySelectorAll('.skills-item-1, .skills-item-2, .skills-item-3, .skills-item-4, .skills-item-5, .skills-item-6');
-    skillsItems.forEach(item => {
-        item.style.borderBottomColor = 'black';
-        item.style.borderRightColor = 'black';
-        item.style.borderLeftColor = 'black';
-        item.style.borderTopColor = 'black';
-    });
 
     document.querySelector('body').style.color='black';
+
+    document.querySelector('.skills h1').style.color='white';
+    document.querySelector('.skills h1').style.borderBottom='5px solid white';
 
     }
 
@@ -122,9 +116,9 @@ function toLightMode(){
    
     document.getElementsByClassName('education')[0].style.backgroundColor='black';
     document.getElementById('CS-Hons').style.backgroundColor='var(--grey)';
-    document.getElementById('BSC-DS').style.backgroundColor='var(--grey)';
+    document.getElementById('MCA').style.backgroundColor='var(--grey)';
     document.getElementById('CS-Hons').style.color='white';
-    document.getElementById('BSC-DS').style.color='white';
+    document.getElementById('MCA').style.color='white';
 
     let subNameTags=document.getElementsByClassName('subname');
     for(let i=0;i<subNameTags.length;i++){
@@ -144,14 +138,6 @@ function toLightMode(){
     aboutMe.style.boxShadow=' 7px 7px 2px white';
     aboutMe.style.backgroundColor='#FF7F4A';
     aboutMe.style.color='black';
-
-    const skillsItems = document.querySelectorAll('.skills-item-1, .skills-item-2, .skills-item-3, .skills-item-4, .skills-item-5, .skills-item-6');
-    skillsItems.forEach(item => {
-        item.style.borderBottomColor = 'white';
-        item.style.borderRightColor = 'white';
-        item.style.borderLeftColor = 'white';
-        item.style.borderTopColor = 'white';
-    });
 
     document.querySelector('body').style.color='white';
  }
