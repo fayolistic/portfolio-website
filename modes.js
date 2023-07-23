@@ -24,8 +24,8 @@ function toLightMode(){
     let h1Tags=document.getElementsByTagName('h1')
     //loops starts from 1 because I don't want the first heading i.e.my name to change the color 
     for(let i=1;i<h1Tags.length;i++){
-    h1Tags[i].style.color='var(--black)';
-    h1Tags[i].style.borderColor='var(--black)'}
+    h1Tags[i].style.color='black';
+    h1Tags[i].style.borderColor='black'}
 
     document.getElementsByTagName('h1')[0].style.color='black'; 
 
@@ -42,6 +42,8 @@ function toLightMode(){
         pTags[i].style.color='black';
     }
 
+
+    
     document.getElementsByClassName('education')[0].style.backgroundColor='#f9fbfe';
 
     
@@ -60,15 +62,25 @@ function toLightMode(){
         subSubNameTags[i].style.color='rgb(58, 54, 54)';
     }
 
-    document.getElementsByClassName('skills')[0].style.backgroundColor='rgb(201, 233, 255)';
-    document.getElementsByTagName('.each-skill-heading').style.color='black';
 
+    let aboutMe = document.querySelector('.about-me');
+    aboutMe.style.border='2px solid black';
+    aboutMe.style.boxShadow=' 7px 7px 2px black';
+    aboutMe.style.backgroundColor='#ffa27b;';
+
+    const skillsItems = document.querySelectorAll('.skills-item-1, .skills-item-2, .skills-item-3, .skills-item-4, .skills-item-5, .skills-item-6');
+    skillsItems.forEach(item => {
+        item.style.borderBottomColor = 'black';
+        item.style.borderRightColor = 'black';
+        item.style.borderLeftColor = 'black';
+        item.style.borderTopColor = 'black';
+    });
+
+    document.querySelector('body').style.color='black';
+
+    }
 
    
-
-    
-    
- }
  // dark-mode
  function toDarkMode(){
     document.getElementById('light-mode').style.display='block';
@@ -125,9 +137,24 @@ function toLightMode(){
     }
 
 
-    document.getElementsByClassName('skills')[0].style.backgroundColor='var(--grey)';
-    document.getElementsByTagName('.each-skill-heading').style.color='white';
-   
+
+    
+    let aboutMe = document.querySelector('.about-me');
+    aboutMe.style.border='2px solid white';   
+    aboutMe.style.boxShadow=' 7px 7px 2px white';
+    aboutMe.style.backgroundColor='#FF7F4A';
+    aboutMe.style.color='black';
+
+    const skillsItems = document.querySelectorAll('.skills-item-1, .skills-item-2, .skills-item-3, .skills-item-4, .skills-item-5, .skills-item-6');
+    skillsItems.forEach(item => {
+        item.style.borderBottomColor = 'white';
+        item.style.borderRightColor = 'white';
+        item.style.borderLeftColor = 'white';
+        item.style.borderTopColor = 'white';
+    });
+
+    document.querySelector('body').style.color='white';
  }
+
  
  
