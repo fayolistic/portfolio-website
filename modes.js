@@ -19,7 +19,6 @@ function toLightMode(){
     letsTalkBtn.style.boxShadow='0 2px 4px rgba(0, 0, 0, 0.2511)';
 
 
-
     
     let h1Tags=document.getElementsByTagName('h1')
     //loops starts from 1 because I don't want the first heading i.e.my name to change the color 
@@ -72,6 +71,10 @@ function toLightMode(){
     document.querySelector('.skills h1').style.color='white';
     document.querySelector('.skills h1').style.borderBottom='5px solid white';
 
+    document.querySelector('.projects').style.backgroundColor="white";
+    document.querySelector('#project-1').innerHTML="<img src=\"images/Project-1.png\">";
+    document.querySelector('#project-2').innerHTML="<img src=\"images/Project-2.png\">";
+    document.querySelector('#project-3').innerHTML="<img src=\"images/Project-3.png\">";
     }
 
    
@@ -130,8 +133,6 @@ function toLightMode(){
         subSubNameTags[i].style.color='white';
     }
 
-
-
     
     let aboutMe = document.querySelector('.about-me');
     aboutMe.style.border='2px solid white';   
@@ -140,6 +141,11 @@ function toLightMode(){
     aboutMe.style.color='black';
 
     document.querySelector('body').style.color='white';
+
+    document.querySelector('.projects').style.backgroundColor="black";
+    document.querySelector('#project-1').innerHTML="<img src=\"images/Project-1-dark.png\">";
+    document.querySelector('#project-2').innerHTML="<img src=\"images/Project-2-dark.png\">";
+    document.querySelector('#project-3').innerHTML="<img src=\"images/Project-3-dark.png\">";
  }
 
  
