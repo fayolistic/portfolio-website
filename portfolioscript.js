@@ -1,4 +1,5 @@
 
+
 document.getElementById('close-icon').style.display='none';
 if(window.innerWidth <= 635){
 function showNavbar(){
@@ -35,7 +36,7 @@ window.addEventListener('scroll', function(){
  });
 
  var typed = new Typed('#changing-container', {
-  strings: ['Design', 'Develop', 'Solve','Code'],
+  strings: ['Code','Design', 'Develop', 'Solve'],
   typeSpeed: 50,
   loop: true,
 });

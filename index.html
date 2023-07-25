@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="portfolio.css">
     <!-- AOS PLUGIN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Footer social media logos -->
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
      
 
 </head>
 
 <body id="body" >
+
    <header class="header-background-light">
     <li><button id="hamburger-button" onclick="showNavbar()"><span class="material-symbols-outlined hamburger" id="hamburger">
         menu
@@ -74,7 +78,7 @@
           
         </span></p>
         <div >
-            <a href="https://www.linkedin.com/in/ayushi-choudhary-7688b91ba/" class="button-link">
+            <a href="https://www.linkedin.com/in/ayushi-choudhary-7688b91ba/" class="button-link" target="_blank">
                 <button class="lets-talk-btn" >
                     LET'S TALK
                 </button>
@@ -170,32 +174,33 @@
             </div> 
         </ul>
     </div>
-
+ 
     <!-- WORK EXPERIENCE -->
+    <span id="wave-2">
+        <img src="images/background-curve-2.png">
+    </span>
     <div class="work-experience" id="work-experience">
-        <h1>
+        <h1 style="margin-bottom: 0.5em;" data-aos="fade-right">
             Work Experience
         </h1>
        
-        <div class="work-experience-content">
+        <div class="work-experience-content" data-aos="fade-right">
             
                 <span>
                     <p id="title">TECHNICAL HEAD</p>
-                    
                     <p class="subname">Ananta-The Science Society IP College</p>
-                    <p class="sub-subname">(Aug 2021 - Present)</p>
+                    <p class="sub-subname">(Aug 2021 - Aug 2022)</p>
                     <br>
                
                     <p class="sub-subname">Coordinate with fellow core team members and department representatives to provide technical support. Maintain and manage work in Graphics Team, Society's Website (Google Sites), Google Drive, and Social Media Handle. Maintain scheduling and event calendars. Coordinate conferences, meetings, and events like webinars and quizzes. Recruit, interview, and select society members.</p>
                   <br>
+                  <a href="https://drive.google.com/file/d/1ONThA_lJZwg6lr_IIdSI5xEfbbfMaGtj/view?usp=sharing" target="_blank">
                     <button class="view-more">See Credentail  <span class="material-symbols-outlined arrow">
                         arrow_right_alt
-                        </span></button>
+                        </span></button></a>
                 </span>
-            <!-- <img src="images/png_20220718_060745_0000.png"> -->
-            <span>
-            
-            
+
+            <span>            
                 <p id="title">MEMBER GRAPHIC TEAM</p>
                 
                 <p class="subname">Ananta-The Science Society IP College</p>
@@ -224,10 +229,12 @@
                    arrow_right_alt
               </span>  </button>  
         </span>
- 
-      
+
     </div>
     </div>
+    <span id="wave-3">
+        <img src="images/background-curve-3.png">
+    </span>
 
     <!-- projects -->
     <div class="projects" id="projects" >
@@ -244,7 +251,7 @@
         <li class="subname">A Dynamic Restaurant Website</li>
         <li class="sub-subname"> <b>Tech Stack: </b> HTML, CSS, JavaScript, MySQL, PHP. </li>
         <li class="sub-subname">The purpose of this project/ website is to provide a restaurant a platform to let their business grow online and to build a professional image. It also helps the customers to get a clear idea of the overall atmosphere of the restaurant, before even stepping a foot inside, by navigating through different pages. The web pages provide simple,well-defined navigation with a clear user experience and quality product visuals and descriptions. The project includes 6 web pages that look and work faultlessly on every phone, tablet, desktop, and internet browser.</li> 
-        <li class="sub-subname"><b >Demo: </b><a href="https://ayushichoudhary-19.github.io/parallaxdining.github.io/">https://ayushichoudhary-19.github.io/parallaxdining.github.io/</a></li>
+        <li class="sub-subname"><b >Demo: </b><a href="https://ayushichoudhary-19.github.io/parallaxdining.github.io/" target="_blank">https://ayushichoudhary-19.github.io/parallaxdining.github.io/</a></li>
         </span>  
     </ul>
   
@@ -276,6 +283,8 @@
         <li class="CS-Hons">Sudoku Solver</li>
         <li class="sub-subname"> <b>Tech Stack: </b>HTML,CSS,JS</li>
         <li class="sub-subname">The website solves Sudoku puzzles using the Backtracking algorithm. It handles empty or invalid inputs and offers a user-friendly interface. Powered by HTML, CSS, and JavaScript and it provides efficient solving and a clean design. It is a basic project built to learn to incorporate DSA Concepts with development.</li></span>  
+        <li class="sub-subname"><b >Demo: </b><a href="https://ayushichoudhary-19.github.io/SudokuSolver/" target="_blank">https://ayushichoudhary-19.github.io/SudokuSolver/</a></li>
+  
     </ul>    
     </div> 
 
@@ -283,14 +292,19 @@
 
     <br>
     <br>
-
 <footer>
   <ul>
 <li class='sub-subname'>
 More Content to be added soon!
 </li>
 <li class='sub-subname'>
-@2022 
+@2023
+</li>
+<li>
+    <div class="footer-logos">
+        <i class="fa fa-linkedin circle"></i>
+        <i class="fa fa-twitter circle"></i>
+    </div>
 </li>
 <li>
 <a href="#"> Go back to the top? </a>
@@ -309,5 +323,7 @@ More Content to be added soon!
         duration: 1000,
     });
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
 </body>
 </html>

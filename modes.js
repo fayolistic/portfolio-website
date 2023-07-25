@@ -75,6 +75,14 @@ function toLightMode(){
     document.querySelector('#project-1').innerHTML="<img src=\"images/Project-1.png\">";
     document.querySelector('#project-2').innerHTML="<img src=\"images/Project-2.png\">";
     document.querySelector('#project-3').innerHTML="<img src=\"images/Project-3.png\">";
+
+    document.querySelector('#wave-2').innerHTML="<img src=\"images/background-curve-2.png\">"
+    document.querySelector('#wave-3').innerHTML="<img src=\"images/background-curve-3.png\">"
+
+    document.querySelector('.').innerHTML="<img src=\"images/background-curve-3.png\">"
+
+
+
     }
 
    
@@ -146,6 +154,9 @@ function toLightMode(){
     document.querySelector('#project-1').innerHTML="<img src=\"images/Project-1-dark.png\">";
     document.querySelector('#project-2').innerHTML="<img src=\"images/Project-2-dark.png\">";
     document.querySelector('#project-3').innerHTML="<img src=\"images/Project-3-dark.png\">";
+
+    document.querySelector('#wave-2').innerHTML="<img src=\"images/background-curve-2-dark.png\">";
+    document.querySelector('#wave-3').innerHTML="<img src=\"images/background-curve-3-dark.png\">";
  }
 
  
