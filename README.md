@@ -1,4 +1,4 @@
-# Portfolio Wbesite
+# Portfolio Website 
 
 ### 📝 Description
 This is my personal portfolio website created using HTML, CSS, and JavaScript. It features a single-page layout and is fully responsive, ensuring a seamless experience on both desktop and mobile devices. The website includes a dark/light mode toggle for user preference. It's a showcase of my skills and projects, and you can explore it [here](https://ayushichoudhary-19.github.io/myportfolio).
