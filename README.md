@@ -1,25 +1,32 @@
-[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-css.svg)](https://forthebadge.com) 
+# Portfolio Wbesite
 
-# Built With
-My personal portfolio https://ayushichoudhary-19.github.io/myportfolio features some of my GitHub projects as well as my resume, education, and technical skills.
+### 📝 Description
+This is my personal portfolio website created using HTML, CSS, and JavaScript. It features a single-page layout and is fully responsive, ensuring a seamless experience on both desktop and mobile devices. The website includes a dark/light mode toggle for user preference. It's a showcase of my skills and projects, and you can explore it [here](https://ayushichoudhary-19.github.io/myportfolio).
 
-This project was built using these technologies:
-<div align="center">
-	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/192108891-d86b6220-e232-423a-bf5f-90903e6887c3.png" alt="Visual Studio Code" title="Visual Studio Code"/></code>
-	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png" alt="HTML" title="HTML"/></code>
-	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/183898674-75a4a1b1-f960-4ea9-abcb-637170a00a75.png" alt="CSS" title="CSS"/></code>
-	<code><img width="50" src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png" alt="JavaScript" title="JavaScript"/></code>
-</div>
+### 👀 Website Preview
+You can check out the website hosted using GitHub Pages on- https://ayushichoudhary-19.github.io/myportfolio
 
-Typed.js - A JavaScript Framework
 
-# Features
+### 🛠️ Languages and Tools Used
+
+<p align="center">
+  <img src="https://img.icons8.com/color/96/000000/html-5.png" alt="HTML" style="margin: 10px;">
+  <img src="https://img.icons8.com/color/96/000000/css3.png" alt="CSS" style="margin: 10px;">
+  <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript (JS)" style="margin: 10px;">
+  <img src="https://img.icons8.com/color/96/000000/visual-studio-code-2019.png" alt="VS Code" style="margin: 10px;">
+  <p align="center"> 
+	  Typed.js - A JavaScript Library </p>
+</p>
+<br>
+
+
+
+# 🌈 Features
 📖 Single-Page Layout
 
 🎨 Has dark/light mode 
 
 📱 Fully Responsive
 
-# Website Preview
-You can check out the website hosted using GitHub Pages on- https://ayushichoudhary-19.github.io/myportfolio
 
+<p align="center">💙 If you like my work, please give this repo a ⭐</p>
