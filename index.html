@@ -1,337 +1,761 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ayushi Choudhary</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
 
-    <!-- For Google Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,200,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,300,0,0" />   <!-- CSS File -->
+        <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/darkstyle.css" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-    <link rel="stylesheet" href="portfolio.css">
-    <!-- AOS PLUGIN -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--
+    - favicon
+  -->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon"
+    />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    >
 
-    <!-- Footer social media logos -->
-    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-     
 
-</head>
+    <!--
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body id="body" >
+  <body>
+    <!--
+    - #MAIN
+  -->
+  <div class="mode-container">
+    <input type="checkbox" class="checkbox" id="checkbox">
+    <label for="checkbox" class="checkbox-label">
+      <i class="fa-solid fa-moon" style="color: #ecdb22;"></i>
+      <i class="fa-solid fa-sun" style="color: #ffca0a;"></i>
+      <span class="ball"></span>
+    </label>
+  </div>
+    <main>
+      <!--
+      - #SIDEBAR
+    -->
 
-   <header class="header-background-light">
-    <li><button id="hamburger-button" onclick="showNavbar()"><span class="material-symbols-outlined hamburger" id="hamburger">
-        menu
-        </span>
-    </button></li>  
-   
-    <nav id="navbar">
-        <button  id="hamburger-button" onclick="hideNavbar()">  <span class="material-symbols-outlined close-icon" id="close-icon">
-            close
-            </span>
-        </button>
-        <ul class="left-nav-elements">
-                
-            <li>
-                <a href="#education"  onclick="hideNavbar()"> Education</a>
-            </li>
-            <li>
-                <a href="#work-experience"  onclick="hideNavbar()">Work Experience</a>
-            </li>
-            <li>
-               <a href="#skills"  onclick="hideNavbar()">Skills</a> 
-            </li>
-            <li>
-               <a href="#projects"  onclick="hideNavbar()">Projects</a> 
-            </li>          
-        </ul>
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="assets/images/Ayushi_Choudhary.jpeg"
+              alt="Ayushi_Choudhary"
+              width="80"
+            />
+          </figure>
 
-        <ul class="right-nav-elements">
-            <li>
-                <span class="resume-span">
-                    <a href="https://drive.google.com/file/d/1w3C_KxYfrWe5ehjamud4i1oDqgQZ5avP/view?usp=drive_link" target="_blank" class="Resume-link">
-                    <button class="Resume-button">Resume</button>
-                    </a>        
-                </span>
-                <span class="material-symbols-outlined dark-mode" id="dark-mode"onclick="toDarkMode()">
-                    dark_mode
-                    </span>
-                    <span class="material-symbols-outlined light-mode" id="light-mode"onclick="toLightMode()">
-                        light_mode
-                    </span>    
-            </li>
-        </ul>
+          <div class="info-content">
+            <h1 class="name" title="Ayushi Choudhary">Ayushi Choudhary</h1>
 
-                
-    </nav>
-<!-- header -->
- 
-            
-        <div class="header-content">
-        <span class="material-symbols-outlined code-icon">
-            code
-            </span>
-        <h1>Ayushi Choudhary</h1>
-        <p>I <span id="changing-container">
-          
-        </span></p>
-        <div >
-            <a href="https://www.linkedin.com/in/ayushi-choudhary-7688b91ba/" class="button-link" target="_blank">
-                <button class="lets-talk-btn" >
-                    LET'S TALK
-                </button>
-              </a>
-             <a href="https://github.com/ayushichoudhary-19" target="_blank">
-           <i class="fa fa-github" style="font-size:100px;color:purple" align="center"></i>
-            </a>
-              </div>
-        <img src="images/profile-pic.png" >
+            <p class="title">Frontend Developer</p>
+
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
         </div>
-    </header>
-<br><br>
 
-    <div class="about-me" data-aos="fade-up">
-        <h1 class="about-me-head" data-aos="fade-right">
-            ABOUT ME
-        </h1>
-        <ul class="about-me-skills">
-        <li class="about-me-content">
-            <p>Computer, Data Science, and Programming student, with a holistic knowledge of tech, coding, design, and development. Always working to make a significant contribution to the team and towards a better tomorrow. Dreaming to work positively towards societal development and for personal growth. Constantly longing for exciting & meaningful challenges. Highly ethical, dependable, and dedicated.</p>
-        </li>
-        </ul>
-    </div> 
-    <img class="wave-img" src="images/background-curve.png">    
-    <div class="skills" id="skills">
-        <h1 class="skills-title" data-aos="fade-right">Skills</h1>
-        <ul class="skills-list" data-aos="fade-down">
-            <li class="skills-item-1 skills-item">
-                HTML5
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+
+                <a href="mailto:ayushichoudhary0016@gmail.com" class="contact-link"
+                  >ayushichoudhary0016@gmail.com</a
+                >
+              </div>
             </li>
-            <li class="skills-item-2 skills-item">
-                CSS5
+
+          
+
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+
+                <address>New Delhi, India</address>
+              </div>
             </li>
-            <li class="skills-item-3 skills-item">
-                JavaScript
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/ayushi-choudhary-7688b91ba/"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
             </li>
-            <li class="skills-item-4 skills-item">
-                C++/Python
+
+            <li class="social-item">
+              <a
+                href="https://twitter.com/geekyAyushi"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
             </li>
-            <li class="skills-item-5 skills-item">
-                SQL
+
+            <li class="social-item">
+              <a
+                href="https://github.com/ayushichoudhary-19"
+                target="_blank"
+                class="social-link"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
             </li>
-            <li class="skills-item-6 skills-item">
-                DSA
+          </ul>
+        </div>
+      </aside>
+
+      <!--
+      - #main-content
+    -->
+
+      <div class="main-content">
+        <!--
+        - #NAVBAR
+      -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
             </li>
-        </ul>
-        <br><br><br><br><br>
-    </div>
-    <hr>
+            
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Skills</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
 
 
-    <div class="education"  id="education">
-        <h1 data-aos="fade-right">
-            Education
-        </h1>
-     
-      <br>
-        <ul class="education-boxes" >
-        <div id="MCA" data-aos="fade-right">         
-        <li>MASTER OF COMPUTER APPLICATIONS</li>
-        <li class="subname">Indira Gandhi Delhi Technical University for Women</li>
-        <li class="sub-subname">(2023-2025) </li>
-        <br>
-        <li class="sub-subname"><b>CGPA: </b>-/10</li>
-        <li class="sub-subname"><b>Releavent Courses : </b>
-            <ul class="list-of-courses">
-                <li>Data Structures and Algorithms</li>
-                <li>Database Management Systems</li>
-                <li>Computer Networks</li>
-                <li>Operating Systems</li>
-                <li>Web Design and Development</li>
-                <li>R-Programming</li>
-                <li>Software Engineering</li>
+          </ul>
+        </nav>
+
+        <!--
+        - #ABOUT
+      -->
+
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              I'm a first-year MCA student at IGDTUW, equipped with a comprehensive understanding of tech, coding, design, and development.
+              As a Frontend Developer and UI/UX enthusiast, I actively contribute to open-source projects and serve as a mentor for GDSC's website development circle.
+            </p>
+            <p>
+              My proficiency spans C++ and Python programming languages, complemented by a solid foundation in HTML, CSS, and JavaScript.
+              I'm also on a journey to master React and data structures and algorithms (DSA).
+            </p>
+            
+            <p>
+              My drive centers around making a significant impact on teams and advancing a brighter future.
+              I'm passionate about contributing to societal development and my personal growth.
+              I eagerly seek out exciting and purposeful challenges, while remaining committed to high ethical standards and unwavering dedication.
+            </p>
+            
+
+          </section>
+
+
+          <section class="service">
+            <h3 class="h3 service-title">What I'm doing</h3>
+
+            <ul class="service-list">
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Web development icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Web development</h4>
+
+                  <p class="service-item-text">
+                    Integrate blockchain into web applications, connecting the
+                    front-end and back-end. Services include web interface to
+                    blockchain network connection, wallet integrations, and
+                    smart contract interaction.
+                  </p>
+                </div>
+              </li>
+
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="mobile app icon"
+                    width="40"
+                  />
+                </div>
+
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">UI/UX</h4>
+
+                  <p class="service-item-text">
+                    I am a UI/ux designer and am familiar with the Figma tool; I
+                    have used it to create a variety of websites.
+                  </p>
+                </div>
+              </li>
             </ul>
-        
-        </li>
-        </div>  
-      
-        <div id="CS-Hons" data-aos="fade-left">         
-            <li>BSC. COMPUTER SCIENCE HONS </li>
-            <li class="subname">Indraprastha College for Women, University of Delhi</li>
-            <li class="sub-subname">(2020-2023) </li>
-            <br>
-            <li class="sub-subname"><b>CGPA: </b>9.0/10</li>
-            <li class="sub-subname"><b>Releavent Courses : </b>
-                <ul class="list-of-courses">
-                    <li>Data Structures and Algorithms</li>
-                    <li>Database Management Systems</li>
-                    <li>Computer Networks</li>
-                    <li>Operating Systems</li>
-                    <li>Web Design and Development</li>
-                    <li>Software Engineering</li>
-                </ul>
-            
+          </section>
+
+
+          <section class="testimonials">
+            <h3 class="h3 testimonials-title">Position of Responsibilities</h3>
+
+            <ul class="testimonials-list has-scrollbar">
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Mentor <br /> Google Developer
+                    Students Club
+                  </h4>
+
+                  <div class="testimonials-text-main" data-testimonials-text>
+                    
+                    As a Mentor for Web Development Circle at GDSC, IGDTUW, my role is to interact with students and conduct sessions for them on Web Development technologies.
+                    I help students learn and build projects around front-end web technologies like HTML, CSS and JavaScript.
+                    
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Associate<br /> Website Team @Taarangana
+                  </h4>
+
+                  <div class="testimonials-text-main" data-testimonials-text>
+                    <p>
+                      I role as Taarangana's website team Associate is to collaborate with fellow associates and junior member to maintain, manage and develop the official website of Taarangana - The Annual Cultural Fest of IGDTUW, which is visited by 1000+ students for event registrations.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                  Technical Team Memberr<br />Finivesta
+                  </h4>
+
+                  <div class="testimonials-text-main" data-testimonials-text>
+                    <p>
+                      At Finivesta - The Finance club of IGDTUW, I am a part of the techincal team which is responsibe to develop the  club's official website.
+                      I am currently designing the UI/UX of the website on Figma and the website will soon be built over React with the efforts of me and my three other talanted teammates.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    President<br />Ananta - The Science Society, IPCW
+                  </h4>
+
+                  <div class="testimonials-text-main"  data-testimonials-text>
+                    <p>
+                      During the final year of my graduation at Indraprastha College for Women, University of Delhi,
+                       I lead the Science Society of the college containing 100+ members, as its president.
+                       I was personally responsible for team recruitment, task management by regularly assuring the quality of work and organizing various workshops and quizzes for the overall development of students from a diverse set of backgrounds.
+                    </p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="testimonials-item">
+                <div class="content-card" data-testimonials-item>
+                  <h4
+                    class="h4 testimonials-item-title"
+                    data-testimonials-title
+                  >
+                    Technical Head <br />Ananta - The Science Society, IPCW
+                  </h4>
+
+                  <div class="testimonials-text-main" data-testimonials-text>
+                    <p>
+                      During the second year of my graduation at IPCW, DU, I was the head of the Graphics Team and the Technical Head of the Science Society.
+                      I coordinated with fellow core team members and department representatives to manage Society's Website (Google Sites), Google Drive, 
+                      social Media Handles and event calendars. Coordinate conferences, meetings, and events like webinars and quizzes. </p>
+                  </div>
+                </div>
+              </li>
+
+            </ul>
+          </section>
+
+          <div class="modal-container" data-modal-container>
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+          </div>
+
+
+        </article>
+
+          
+        <!--
+        - #Skills
+      -->
+<section>
+        <article class="skills" data-page="skills">
+          <header>
+            <h2 class="h2 article-title">Skills</h2>
+          </header>
+
+          <section >
+          
+          </section>
+        </article>
+      </section>
+
+        <!-- Resume -->
+
+    <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Indira Gandhi Delhi Technical University
+              </h4>
+
+              <span>2023 — 2025</span>
+
+              <p class="timeline-text">
+               Masters of Computer Application
+              </p>
             </li>
-            </div> 
-        </ul>
-    </div>
- 
-    <!-- WORK EXPERIENCE -->
-    <span id="wave-2">
-        <img src="images/background-curve-2.png">
-    </span>
-    <div class="work-experience" id="work-experience">
-        <h1 style="margin-bottom: 0.5em;" data-aos="fade-right">
-            Work Experience
-        </h1>
-       
-        <div class="work-experience-content" data-aos="fade-right">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Indraprastha College for Women, University of Delhi
+              </h4>
+
+              <span>2020 — 2023</span>
+
+              <p class="timeline-text">
+               BSc. Computer Science Honors
+              </p>
+            </li>
+
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Kendriya Vidyalaya</h4>
+
+              <span>2018 — 2019</span>
+
+              <p class="timeline-text">High School class (XII)</p>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+                      <h3 class="h3">Achievements</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+              
+Second Position in National Level Online PowerPoint Presentation Competition
+              </h4>
+
+              <span> KVA DAV College for Women, Karnal</span>
+
+              <p class="timeline-text">
+                The topic of the Presentation was : "5G Technology: Pros & Cons"
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Dr. S.N. Goenka Memorial Scholarship Highest CGPA</h4>
+
+              <span>Indraprastha College for Women, DU</span>
+
+              <p class="timeline-text">
+                Scholarship for highest cgpa in BSC. Computer Science Hons. in the year 2020-21Scholarship</p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">
+                Second Position in the University</h4>
+
+              <span>University of Delhi</span>
+
+              <p class="timeline-text">Second Position in the University of Delhi for BSc. Computer Science Hons Part-1 in year 2020-21</p>
+            </li>
+
             
-                <span>
-                    <p id="title">TECHNICAL HEAD</p>
-                    <p class="subname">Ananta-The Science Society IP College</p>
-                    <p class="sub-subname">(Aug 2021 - Aug 2022)</p>
-                    <br>
-               
-                    <p class="sub-subname">Coordinate with fellow core team members and department representatives to provide technical support. Maintain and manage work in Graphics Team, Society's Website (Google Sites), Google Drive, and Social Media Handle. Maintain scheduling and event calendars. Coordinate conferences, meetings, and events like webinars and quizzes. Recruit, interview, and select society members.</p>
-                  <br>
-                  <a href="https://drive.google.com/file/d/1ONThA_lJZwg6lr_IIdSI5xEfbbfMaGtj/view?usp=sharing" target="_blank">
-                    <button class="view-more">See Credentail  <span class="material-symbols-outlined arrow">
-                        arrow_right_alt
-                        </span></button></a>
-                </span>
+          </ol>
+        </section>
 
-            <span>            
-                <p id="title">MEMBER GRAPHIC TEAM</p>
-                
-                <p class="subname">Ananta-The Science Society IP College</p>
-                <p class="sub-subname">(Jan 2021 - Aug 2021)</p>
-                <br>
-                 
-                <p class="sub-subname">Created creative graphics for the Society. This included graphics for various Instagram Stories and Posts</p>
-                <br>
-                <button class="view-more">See Credentail  <span class="material-symbols-outlined arrow">
-                    arrow_right_alt
-                    </span></button>
-           </span>
-           <!-- <img src="images/20220718_060437.jpg"> -->
-           <span>
-            <p id="title">CONTENT WRITER</p>
-            
-            <p class="subname">LA MUSE</p>
-            <p class="sub-subname">(Dec 2020 - Feb 2021)</p>
-            <br>
-       
-            <p class="sub-subname">Develop creative content for the website-about us, category pages, product pages, and blogs. Write content for marketing campaigns, emailers, and
-                social media. Research industry-related topics, trending keywords, and
-                create a content idea bank for blogs.</p>
-                <br>
-            <button class="view-more">See Credentail  <span class="material-symbols-outlined arrow">
-                   arrow_right_alt
-              </span>  </button>  
-        </span>
-
-    </div>
-    </div>
-    <span id="wave-3">
-        <img src="images/background-curve-3.png">
-    </span>
-
-    <!-- projects -->
-    <div class="projects" id="projects" >
-        <h1 data-aos="fade-right">
-            Projects
-        </h1>
-      <div class="project-contents">
-        <ul><li id="project-1">
-            <img src="images/Project-1.png">
-        </li></ul>
-        <ul data-aos="fade-left" class="project-description">
-        <span>       
-        <li class="CS-Hons">Parallax-Dining</li>
-        <li class="subname">A Dynamic Restaurant Website</li>
-        <li class="sub-subname"> <b>Tech Stack: </b> HTML, CSS, JavaScript, MySQL, PHP. </li>
-        <li class="sub-subname">The purpose of this project/ website is to provide a restaurant a platform to let their business grow online and to build a professional image. It also helps the customers to get a clear idea of the overall atmosphere of the restaurant, before even stepping a foot inside, by navigating through different pages. The web pages provide simple,well-defined navigation with a clear user experience and quality product visuals and descriptions. The project includes 6 web pages that look and work faultlessly on every phone, tablet, desktop, and internet browser.</li> 
-        <li class="sub-subname"><b >Demo: </b><a href="https://ayushichoudhary-19.github.io/parallaxdining.github.io/" target="_blank">https://ayushichoudhary-19.github.io/parallaxdining.github.io/</a></li>
-        </span>  
-    </ul>
   
-    
-    </div>   
-    
-    <div class="project-contents">
-        <ul><li id="project-2">
-            <img src="images/Project-2.png">
-        </li></ul>
-        <ul data-aos="fade-left">
-        <span>       
-        <br><br><br>
-        <li class="CS-Hons">SoulNect</li>
-        <li class="subname">A mental health website</li>
-        <li class="sub-subname"> <b>Tech Stack: </b>HTML,CSS,JS,Firebase</li>
-        <li class="sub-subname">Soulnect is a mental health project aimed at providing a supportive online community and resources for individuals seeking mental well-being. With a combination of HTML, CSS, JavaScript, and Firebase for the backend, Soulnect offers a range of features including user authentication, community forums, resources & articles, mood tracking & journaling.</li> 
-    </span>  
-    </ul>    
-    </div> 
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
 
-    <div class="project-contents">
-        <ul><li id="project-3">
-            <img src="images/Project-3.png">
-        </li></ul>
-        <ul data-aos="fade-left">
-        <span>       
-        <br><br><br>
-        <li class="CS-Hons">Sudoku Solver</li>
-        <li class="sub-subname"> <b>Tech Stack: </b>HTML,CSS,JS</li>
-        <li class="sub-subname">The website solves Sudoku puzzles using the Backtracking algorithm. It handles empty or invalid inputs and offers a user-friendly interface. Powered by HTML, CSS, and JavaScript and it provides efficient solving and a clean design. It is a basic project built to learn to incorporate DSA Concepts with development.</li></span>  
-        <li class="sub-subname"><b >Demo: </b><a href="https://ayushichoudhary-19.github.io/SudokuSolver/" target="_blank">https://ayushichoudhary-19.github.io/SudokuSolver/</a></li>
-  
-    </ul>    
-    </div> 
+              <h3 class="h3">Volunteer/Contribution</h3>
+            </div>
 
-    </div>
-<footer>
-  <ul>
-<li class='sub-subname'>
-    
-</li>
-<li class='sub-subname'>
-@2023
-</li>
-<li>
-<div class="footer-logos">
-    <a href="https://www.linkedin.com/in/ayushi-choudhary-7688b91ba/" target="_blank">
-        <i class="fa fa-linkedin circle"></i>
-    </a>
-    <a href="https://twitter.com/geekyAyushi" target="_blank">
-        <i class="fa fa-twitter circle"></i>
-    </a>
-</div>
-</li>
-<li>
-<a href="#"> Go back to the top? </a>
-</li>
-</ul>
-</footer>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Open Source Contributor
+                </h4>
 
-<!-- JS File -->
-<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-<script src="portfolioscript.js"></script>
-<script src="modes.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        offset: 300,
-        duration: 1000,
-    });
-  </script>
+                <span>Sept. 2023 — Present</span>
 
-  <script src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
-</body>
+                <p class="timeline-text"><b> #2 Contributor </b><a href="https://github.com/warmachine028/nike/">warmachine028/nike</a> </p>
+                <p class="timeline-text">Added the 'go-to-top' FAB button using JavaScript.</p>
+                <p class="timeline-text">Added the number counter on Landing Page to enhance the UI/UX.</p>
+                <p class="timeline-text">Fixed a bug that caused inconsistency in styles on larger and smaller screens.</p>
+                <p class="timeline-text">Enhanced the Input Field Design and Added Active State Effect in Contact-Us section.</p>
+
+                <br>
+                <p class="timeline-text"><b> CSS- UI/UX Contributor </b><a href="https://github.com/KendallDoesCoding/youtubers-birthdays">youtubers-birthdays</a> </p>
+                <p class="timeline-text">Entirely restyled the the the UI/UX of the Home page, the AddYoutuber and RemoveYoutuber Page.</p>
+
+                </p>
+
+                <br>
+                <p class="timeline-text"><b> #13 Contributor </b><a href="https://github.com/sarmadhamdani02/WebGames">WebGames</a> </p>
+                <p class="timeline-text">Added a media query for screens between 701px and 1050px, specifically targeting tablet-sized screens. Thus, Fixed the navbar and overall responsiveness.</p>
+                <p class="timeline-text">Equally padded the navbar elements from both right and left side.</p>
+
+                </p>
+
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Web Developer - EdJustice Foundation
+                </h4>
+
+                <span>Oct 2022 - Jan 2023</span>
+
+                <p class="timeline-text">
+                  Enhanced the existing UI/UX. Uploaded blogs received from the Content team on the Wix Platform.
+                </p>
+              </li>
+
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Recording Audiobooks - Visionaries</h4>
+
+                <span>July 2021 — present</span>
+
+                <p class="timeline-text">Recorded Audio lectures for students, who are visually imparied, in both Hindi and English Language.</p>
+              </li>
+
+            </ol>
+          </section>
+        </article>
+
+        <!--
+        - #PORTFOLIO
+      -->
+
+        <article class="portfolio" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="projects">
+            <ul class="filter-list">
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+            </ul>
+
+            <div class="filter-select-box">
+              <button class="filter-select" data-select>
+                <div class="select-value" data-selecct-value>
+                  Select category
+                </div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+              </button>
+
+              <ul class="select-list">
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+              </ul>
+            </div>
+
+            <ul class="project-list">
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/ayushichoudhary-19/WebSummarizer" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-1.png"
+                      alt="Fund Easy"
+                      height="100"
+                      width="10"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">WebSummarizer</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category">Project</span>
+                  <br/>
+                  
+
+                  <p class="project-category">
+                    This Chrome extension enables users to extract and summarize the content of the currently opened web page. 
+                    It utilizes the Cohere.ai API to generate concise summaries of web page content. 
+                    The summarized content is then displayed in a popup within the Chrome browser.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/ayushichoudhary-19/parallaxdining.github.io" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-2.png"
+                      alt="Easy-Care"
+                      height="80"
+                      width="120"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Parallax Dining</h3>
+
+                  <p class="project-category"></p>
+                  <span class="project-category">Project</span>
+                  <br/>
+                  <p class="project-category">
+                    The website provide simple, well-defined navigation with a clear user experience and quality product visuals 
+                    and descriptions. The project includes 6 web pages that look and work faultlessly on every phone, tablet, desktop, 
+                    and internet browser.  It is build using HTML, CSS, JS, Bootstrap, MySql and PHP.
+                  </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web development"
+              >
+                <a href="https://github.com/ayushichoudhary-19/SudokuSolver" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img src="./assets/images/project-3.png" alt="ERC-20" height="80"
+                      width="120" loading="lazy" />
+                  </figure>
+
+                  <h3 class="project-title">Sudoku Solver</h3>
+                   <p class="project-category">
+                    Project
+                  </p>
+                  <br/>
+                  <p class="project-category">
+                   A web application designed to solve Sudoku puzzles using the powerful Backtracking algorithm.
+                    This interactive tool is built with JavaScript, providing an intuitive way to solve Sudoku puzzles 
+                    and gain insights into this classic number puzzle game.            </p>
+                </a>
+              </li>
+
+              <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/Shubham1769/ERC-721-Token-" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="ER-721"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Taarangana</h3>
+
+                  <p class="project-category">Project</p>
+                  <br/>
+                  <p class="project-category">
+                    This project is a demo website of our college's annual cultural fest and was solely created for the recruitment 
+                    task of Taarangana.
+                    It has Interactive Design, Image Gallery, Responsive Layout and Animations.
+                  </p></a>
+
+              </li>
+               <li
+                class="project-item active"
+                data-filter-item
+                data-category="web design"
+              >
+                <a href="https://github.com/ayushichoudhary-19/finivesta-demo">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="Funder"
+                      loading="lazy"
+                    />
+                  </figure>
+
+                  <h3 class="project-title">Finivesta-Demo</h3>
+
+                  <p class="project-category">Projects</p>
+                  <br/>
+                  <p class="project-category">
+               A demo website for College's Finance Society, created for recruitment processes. Tech Stack used is HTML,CSS, BootStrap and Js.                  </p>
+                </a>
+              </li>
+             
+            </ul>
+          </section>
+        </article>
+
+      </div>
+     
+      
+    </main>
+
+    <!--
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>
