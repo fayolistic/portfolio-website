@@ -290,6 +290,14 @@
         color: white;
     }
 
+.skills section img{
+    width: 70%;
+}
+    .skills section{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+    }
 
     .skills-item-1{
         border-bottom: 1px solid white;
@@ -317,6 +325,7 @@
     .skills-item-6{
         text-align: center;
     }
+
 
     hr{
         height: 0.2em;
