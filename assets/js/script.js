@@ -1,26 +1,103 @@
-'use strict';
-
-// mode changer
 document.addEventListener("DOMContentLoaded", () => {
   const checkbox = document.querySelector(".checkbox");
 
   checkbox.addEventListener("change", () => {
+    const root = document.documentElement;
+
     if (checkbox.checked) {
-      setTimeout(() => {
-        const darkStylesheetLink = document.querySelector("link[rel='stylesheet'][href='./assets/css/darkstyle.css']");
-        darkStylesheetLink.href = checkbox.checked ? "./assets/css/lightstyle.css" : "./assets/css/darkstyle.css";
-      }, 100);
+      // Switch to light mode
+      root.style.setProperty('--bg-gradient-yellow-1', 'linear-gradient(to bottom right, hsl(282, 68%, 85%) 0%, hsla(285, 94%, 81%, 0) 50%)');
+      root.style.setProperty('--text-gradient-yellow', 'linear-gradient(to right, hsl(260, 100%, 85%), hsl(290, 100%, 83%))');
+      root.style.setProperty('--bg-gradient-jet', 'white');
+      root.style.setProperty('--jet', 'hsl(0, 0%, 93%)');
+      root.style.setProperty('--onyx', 'hsl(271, 100%, 89%)');
+      root.style.setProperty('--eerie-black-1', 'hsl(0, 0%, 100%)');
+      root.style.setProperty('--eerie-black-2', 'hsl(240, 100%, 100%)');
+      root.style.setProperty('--smoky-black', 'hsl(0, 0%, 100%)');
+      root.style.setProperty('--white-1', 'hsl(0, 0%, 0%)');
+      root.style.setProperty('--white-2', 'hsl(0, 4%, 21%)');
+      root.style.setProperty('--orange-yellow-crayola', 'hsl(270, 50%, 70%)');
+      root.style.setProperty('--vegas-gold', 'hsl(270, 50%, 68%)');
+      root.style.setProperty('--bittersweet-shimmer', 'hsl(0, 43%, 51%)');
+    } else {
+      // Switch to dark mode
+      root.style.setProperty('--bg-gradient-yellow-1', 'linear-gradient(to bottom right, hsl(283, 100%, 63%) 0%, hsla(285, 100%, 69%, 0) 50%)');
+      root.style.setProperty('--text-gradient-yellow', 'linear-gradient(to right, hsl(260, 96%, 71%), hsl(290, 100%, 76%))');
+      root.style.setProperty('--bg-gradient-jet', 'linear-gradient(to bottom right, hsla(240, 1%, 18%, 0.251) 0%, hsla(240, 2%, 11%, 0) 100%)');
+      root.style.setProperty('--jet', 'hsl(0, 0%, 22%)');
+      root.style.setProperty('--onyx', 'hsl(240, 1%, 17%)');
+      root.style.setProperty('--eerie-black-1', 'hsl(240, 2%, 13%)');
+      root.style.setProperty('--eerie-black-2', 'hsl(240, 2%, 12%)');
+      root.style.setProperty('--smoky-black', 'hsl(0, 0%, 7%)');
+      root.style.setProperty('--white-1', 'hsl(0, 0%, 100%)');
+      root.style.setProperty('--white-2', 'hsl(0, 0%, 98%)');
+      root.style.setProperty('--orange-yellow-crayola', 'hsl(260, 96%, 71%)');
+      root.style.setProperty('--vegas-gold', 'hsl(270, 50%, 68%)');
+      root.style.setProperty('--bittersweet-shimmer', 'hsl(0, 43%, 51%)');
     }
+
+    // Toggle styles for checkbox label
+    const checkboxLabel = document.querySelector(".checkbox-label");
+    checkboxLabel.style.backgroundColor = checkbox.checked ? 'var(--onyx)' : 'var(--bg-gradient-onyx)';
+    checkboxLabel.style.border = checkbox.checked ? '1px solid hsl(270, 50%, 68%)' : '1px solid var(--jet)';
+
+    // Toggle styles for info content title
+    const infoContentTitle = document.querySelector(".info-content .title");
+    infoContentTitle.style.background = checkbox.checked ? 'hsla(270, 50%, 70%, 0.634)' : 'var(--onyx)';
+    const infomorebutton = document.querySelector(".info_more-btn");
+    infomorebutton.style.backgroundColor = checkbox.checked ? 'white' : 'var(--bg-gradient-jet)';
+
+    // Toggle styles for navbar
+    const navbar = document.querySelector(".navbar");
+    navbar.style.background = checkbox.checked ? 'var(--onyx)' : 'hsla(240, 1%, 17%, 0.75)';
+    navbar.style.border = checkbox.checked ? '1px solid hsl(270, 50%, 68%)' : '1px solid var(--jet)';
+
+    // Toggle styles for testimonials-text
+    const testimonialsTextMain = document.querySelectorAll(".testimonials-text-main");
+    testimonialsTextMain.forEach(element =>{
+      element.style.color = checkbox.checked ? 'var(--light-gray)':'white';
+    });
     
-    if (!checkbox.checked) {
-      setTimeout(() => {
-        const lightStylesheetLink = document.querySelector("link[rel='stylesheet'][href='./assets/css/lightstyle.css']");
-        lightStylesheetLink.href = checkbox.checked ? "./assets/css/lightstyle.css" : "./assets/css/darkstyle.css";
-      }, 100);
-    }
+
+    // Toggle styles for about-text paragraphs
+    const aboutTextParagraphs = document.querySelector(".about-text");
+    aboutTextParagraphs.style.color = checkbox.checked ? 'var(--light-gray)' : 'white';
+
+    const servicetext = document.querySelectorAll(".service-item-text");
+    servicetext.forEach(element => {
+      element.style.color = checkbox.checked ? 'var(--light-gray)' : 'white';
+    });
+
+    const serviceitembefore = document.querySelectorAll(".service-item::before");
+    const serviceitem = document.querySelectorAll(".service-item");
+    const infomorebtn = document.querySelectorAll(".info_more-btn");
+    const contentcardbefore = document.querySelectorAll(".content-card::before");
+    const contentcard = document.querySelectorAll(".content-card");
+    const timelinetext = document.querySelectorAll(".timeline-text");
+
+    serviceitembefore.forEach(element => {
+      element.style.backgroundColor = checkbox.checked ? 'white' : 'var(--bg-gradient-jet)';
+    });
+    infomorebtn.forEach(element => {
+      element.style.background = checkbox.checked ? 'var(--onyx)':'var(--border-gradient-onyx)';
+    });
+    serviceitem.forEach(element => {
+      element.style.background = checkbox.checked ? 'white':'var(--border-gradient-onyx)';
+    });
+    contentcard.forEach(element => {
+      element.style.background = checkbox.checked ? 'white':'var(--border-gradient-onyx)';
+    });
+    timelinetext.forEach(element => {
+      element.style.color= checkbox.checked ?' var(--light-gray)': 'hsl(0, 1%, 85%)';
+    });
+
+      const navbarlink = document.querySelectorAll(".navbar-link");
+      navbarlink.forEach(element => {
+        element.style.color = checkbox.checked ? 'var(--light-gray)':'white';
+      });
+    
   });
 });
-
 
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
