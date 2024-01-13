@@ -20,7 +20,6 @@ You can check out the website hosted using GitHub Pages at- https://ayushichoudh
 
 
 # 🌈 Features
-📖 Single-Page Layout
 
 🎨 Has dark/light mode 
 
